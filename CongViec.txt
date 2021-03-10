@@ -1,5 +1,5 @@
 ﻿1.Quản Lý Sách, Loại Sách, Tác Giả
-2.Quản Lý Thủ Thư, Độc Giả
+2.Quản Lý Thủ Thư, Độc Giả(Sơn Vip pro)
 3.Chi Tiết Mượn Trả
 4.Tìm Kiếm (Vũ Huy Quang)
 5.Báo Cáo Thống Kê
