@@ -1,7 +1,7 @@
 Quản Lý: chức năng xem thêm sửa xóa, datagridview chứ dữ liệu, các text box thêm thông tin
 Chi Tiết Mượn Chả: tạo phiếu mượn, (viết trigger ngaymuon < ngaytra 5 ngày không quá 30 ngày, nếu mượn tinhtrangsach = 1)
 	-Chi tiết mượn trả in ra danh sách đang mượn (có button gia hạn chạy funcion nếu ấn thay đổi thông tin ngày trả +5)
-Tìm Kiếm: tìm kiếm sách độc giả theo mã, tên
+Tìm Kiếm: tìm kiếm sách độc giả theo mã, tên (Vũ Huy Quang)
 Báo Cáo Thống Kê:
 	-Thống kê tất cả xuất file excel( nếu được )
 	-Thông kê người mượn xuất file excel( nếu được)
