@@ -1,0 +1,11 @@
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fLogin.resources
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fManager.resources
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
