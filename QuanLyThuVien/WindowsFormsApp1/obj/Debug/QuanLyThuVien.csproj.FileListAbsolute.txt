@@ -9,3 +9,14 @@ C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debu
 C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
 C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\huyho\OneDrive\Desktop\TT nhóm\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fLogin.resources
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fManager.resources
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
