@@ -34,3 +34,4 @@ C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\Win
 C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
 C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form_report.resources
