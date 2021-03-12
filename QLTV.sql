@@ -65,3 +65,5 @@ username nvarchar(50),
 pass varchar(50),
 foreign key(mathuthu) references dbo.ThuThu(mathuthu)
 )
+select * from QLTV
+select mamuon as N'Mã m??n', mathuthu N'Mã th? th?', Muon.madocgia N'Mã ??c gi?', masach N'Mã sách', ngaymuon N'Ngày m??n', ngaytra N'Ngày tr?', tinhtrangmuon N'Tình tr?ng m??n', hoten N'H? và tên', ngaysinh N'Ngaysinh', diachi N'??a ch?' from muon join docgia on Muon.madocgia=DocGia.madocgia

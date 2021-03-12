@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace WindowsFormsApp1
 {
     public partial class Form_report : Form
@@ -19,7 +19,17 @@ namespace WindowsFormsApp1
 
         private void button_als_Click(object sender, EventArgs e)
         {
-
+            if(radioButton_nguoimuon.Checked==true)
+            {
+                if(radioButton_all.Checked==true)
+                {
+                    using (SqlConnection sql = new SqlConnection(SQLConStr.conStr))
+                    {
+                        sql.Open();
+                        SqlDataAdapter sqlData = new SqlDataAdapter("select mamuon as N'Mã mượn', mathuthu N'Mã thủ thư', Muon.madocgia N'Mã độc giả', masach N'Mã sách', ngaymuon N'Ngày mượn', ngaytra N'Ngày trả', tinhtrangmuon N'Tình trạng mượn', hoten N'Họ và tên', ngaysinh N'Ngày sinh', diachi N'Địa chỉ' from muon join docgia on Muon.madocgia=DocGia.madocgia", SQLConStr.conStr);
+                    }    
+                }    
+            }    
         }
     }
 }

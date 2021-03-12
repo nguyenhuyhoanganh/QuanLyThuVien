@@ -95,6 +95,7 @@ namespace WindowsFormsApp1
             // radioButton_nguoimuon
             // 
             this.radioButton_nguoimuon.AutoSize = true;
+            this.radioButton_nguoimuon.Checked = true;
             this.radioButton_nguoimuon.Location = new System.Drawing.Point(16, 31);
             this.radioButton_nguoimuon.Name = "radioButton_nguoimuon";
             this.radioButton_nguoimuon.Size = new System.Drawing.Size(167, 21);
@@ -151,6 +152,7 @@ namespace WindowsFormsApp1
             // radioButton_all
             // 
             this.radioButton_all.AutoSize = true;
+            this.radioButton_all.Checked = true;
             this.radioButton_all.Location = new System.Drawing.Point(17, 31);
             this.radioButton_all.Name = "radioButton_all";
             this.radioButton_all.Size = new System.Drawing.Size(128, 21);
