@@ -29,7 +29,6 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_report));
             this.dataGridView_report = new System.Windows.Forms.DataGridView();
             this.button_als = new System.Windows.Forms.Button();
             this.button_excel = new System.Windows.Forms.Button();
@@ -61,7 +60,7 @@ namespace WindowsFormsApp1
             // 
             this.button_als.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_als.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_als.Image = ((System.Drawing.Image)(resources.GetObject("button_als.Image")));
+            this.button_als.Image = global::WindowsFormsApp1.Properties.Resources.sql_open_file_format;
             this.button_als.Location = new System.Drawing.Point(80, 31);
             this.button_als.Name = "button_als";
             this.button_als.Size = new System.Drawing.Size(175, 75);
@@ -75,7 +74,8 @@ namespace WindowsFormsApp1
             // 
             this.button_excel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_excel.Image = ((System.Drawing.Image)(resources.GetObject("button_excel.Image")));
+            this.button_excel.Image = global::WindowsFormsApp1.Properties.Resources.excel;
+            this.button_excel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_excel.Location = new System.Drawing.Point(80, 101);
             this.button_excel.Name = "button_excel";
             this.button_excel.Size = new System.Drawing.Size(175, 75);
@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.radioButton_nguoimuon);
             this.groupBox1.Controls.Add(this.radioButton_sach);
             this.groupBox1.Location = new System.Drawing.Point(432, 31);
@@ -122,7 +122,7 @@ namespace WindowsFormsApp1
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Controls.Add(this.radioButton_dangmuon);
             this.groupBox2.Controls.Add(this.radioButton_trehan);
             this.groupBox2.Controls.Add(this.radioButton_all);
