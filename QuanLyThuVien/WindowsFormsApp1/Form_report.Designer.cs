@@ -83,6 +83,7 @@ namespace WindowsFormsApp1
             this.button_excel.Text = "Làm việc với excel";
             this.button_excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_excel.UseVisualStyleBackColor = false;
+            this.button_excel.Click += new System.EventHandler(this.button_excel_Click);
             // 
             // groupBox1
             // 

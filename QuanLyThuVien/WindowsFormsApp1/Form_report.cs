@@ -94,5 +94,23 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        private void button_excel_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog save = new SaveFileDialog() {Filter="SQLEXPORT|*.xlsx" })
+            {
+                if(save.ShowDialog()==DialogResult.OK)
+                {
+                    try
+                    {
+                        using(XLWorkbook)
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }    
+            }    
+        }
     }
 }
