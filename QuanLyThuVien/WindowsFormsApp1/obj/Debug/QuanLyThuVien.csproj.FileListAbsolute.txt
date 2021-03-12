@@ -21,3 +21,16 @@ D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.c
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fHelp.resources
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fHelp.resources
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fLogin.resources
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fManager.resources
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form_report.resources
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\LOCALBOI\source\repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -31,56 +31,60 @@ namespace WindowsFormsApp1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_report));
             this.dataGridView_report = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_als = new System.Windows.Forms.Button();
+            this.button_excel = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton_nguoimuon = new System.Windows.Forms.RadioButton();
+            this.radioButton_sach = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton_datra = new System.Windows.Forms.RadioButton();
+            this.radioButton_chuatra = new System.Windows.Forms.RadioButton();
+            this.radioButton_all = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_report)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView_report
             // 
             this.dataGridView_report.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_report.Location = new System.Drawing.Point(13, 102);
+            this.dataGridView_report.Location = new System.Drawing.Point(13, 228);
             this.dataGridView_report.Name = "dataGridView_report";
             this.dataGridView_report.RowHeadersWidth = 51;
             this.dataGridView_report.RowTemplate.Height = 24;
-            this.dataGridView_report.Size = new System.Drawing.Size(775, 522);
+            this.dataGridView_report.Size = new System.Drawing.Size(775, 396);
             this.dataGridView_report.TabIndex = 0;
             // 
-            // button1
+            // button_als
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(40, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 65);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Thống kê";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_als.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_als.Image = ((System.Drawing.Image)(resources.GetObject("button_als.Image")));
+            this.button_als.Location = new System.Drawing.Point(40, 31);
+            this.button_als.Name = "button_als";
+            this.button_als.Size = new System.Drawing.Size(128, 75);
+            this.button_als.TabIndex = 1;
+            this.button_als.Text = "Thống kê";
+            this.button_als.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_als.UseVisualStyleBackColor = true;
+            this.button_als.Click += new System.EventHandler(this.button_als_Click);
             // 
-            // button2
+            // button_excel
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(174, 31);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 65);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Làm việc với excel";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_excel.Image = ((System.Drawing.Image)(resources.GetObject("button_excel.Image")));
+            this.button_excel.Location = new System.Drawing.Point(174, 31);
+            this.button_excel.Name = "button_excel";
+            this.button_excel.Size = new System.Drawing.Size(175, 75);
+            this.button_excel.TabIndex = 3;
+            this.button_excel.Text = "Làm việc với excel";
+            this.button_excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_excel.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton_nguoimuon);
+            this.groupBox1.Controls.Add(this.radioButton_sach);
             this.groupBox1.Location = new System.Drawing.Point(388, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(371, 83);
@@ -88,53 +92,90 @@ namespace WindowsFormsApp1
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê theo";
             // 
-            // radioButton3
+            // radioButton_nguoimuon
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(137, 31);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(110, 21);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton_nguoimuon.AutoSize = true;
+            this.radioButton_nguoimuon.Location = new System.Drawing.Point(16, 31);
+            this.radioButton_nguoimuon.Name = "radioButton_nguoimuon";
+            this.radioButton_nguoimuon.Size = new System.Drawing.Size(167, 21);
+            this.radioButton_nguoimuon.TabIndex = 5;
+            this.radioButton_nguoimuon.TabStop = true;
+            this.radioButton_nguoimuon.Text = "Thông tin người mượn";
+            this.radioButton_nguoimuon.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton_sach
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(250, 31);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 21);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_sach.AutoSize = true;
+            this.radioButton_sach.Location = new System.Drawing.Point(189, 31);
+            this.radioButton_sach.Name = "radioButton_sach";
+            this.radioButton_sach.Size = new System.Drawing.Size(123, 21);
+            this.radioButton_sach.TabIndex = 4;
+            this.radioButton_sach.TabStop = true;
+            this.radioButton_sach.Text = "Thông tin sách";
+            this.radioButton_sach.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // groupBox2
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(21, 31);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.radioButton_datra);
+            this.groupBox2.Controls.Add(this.radioButton_chuatra);
+            this.groupBox2.Controls.Add(this.radioButton_all);
+            this.groupBox2.Location = new System.Drawing.Point(361, 125);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(414, 83);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thống kê theo";
+            // 
+            // radioButton_datra
+            // 
+            this.radioButton_datra.AutoSize = true;
+            this.radioButton_datra.Location = new System.Drawing.Point(331, 31);
+            this.radioButton_datra.Name = "radioButton_datra";
+            this.radioButton_datra.Size = new System.Drawing.Size(68, 21);
+            this.radioButton_datra.TabIndex = 9;
+            this.radioButton_datra.TabStop = true;
+            this.radioButton_datra.Text = "Đã trả";
+            this.radioButton_datra.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_chuatra
+            // 
+            this.radioButton_chuatra.AutoSize = true;
+            this.radioButton_chuatra.Location = new System.Drawing.Point(196, 31);
+            this.radioButton_chuatra.Name = "radioButton_chuatra";
+            this.radioButton_chuatra.Size = new System.Drawing.Size(83, 21);
+            this.radioButton_chuatra.TabIndex = 8;
+            this.radioButton_chuatra.TabStop = true;
+            this.radioButton_chuatra.Text = "Chưa trả";
+            this.radioButton_chuatra.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_all
+            // 
+            this.radioButton_all.AutoSize = true;
+            this.radioButton_all.Location = new System.Drawing.Point(17, 31);
+            this.radioButton_all.Name = "radioButton_all";
+            this.radioButton_all.Size = new System.Drawing.Size(128, 21);
+            this.radioButton_all.TabIndex = 7;
+            this.radioButton_all.TabStop = true;
+            this.radioButton_all.Text = "Tất cả thông tin";
+            this.radioButton_all.UseVisualStyleBackColor = true;
             // 
             // Form_report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 636);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_excel);
+            this.Controls.Add(this.button_als);
             this.Controls.Add(this.dataGridView_report);
             this.Name = "Form_report";
             this.Text = "Form_report";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_report)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -142,12 +183,15 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView_report;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_als;
+        private System.Windows.Forms.Button button_excel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton_nguoimuon;
+        private System.Windows.Forms.RadioButton radioButton_sach;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton_datra;
+        private System.Windows.Forms.RadioButton radioButton_chuatra;
+        private System.Windows.Forms.RadioButton radioButton_all;
     }
 }
