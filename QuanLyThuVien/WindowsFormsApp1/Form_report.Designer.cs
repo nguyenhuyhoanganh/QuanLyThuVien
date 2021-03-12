@@ -60,9 +60,9 @@ namespace WindowsFormsApp1
             // 
             this.button_als.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_als.Image = ((System.Drawing.Image)(resources.GetObject("button_als.Image")));
-            this.button_als.Location = new System.Drawing.Point(40, 31);
+            this.button_als.Location = new System.Drawing.Point(5, 31);
             this.button_als.Name = "button_als";
-            this.button_als.Size = new System.Drawing.Size(128, 75);
+            this.button_als.Size = new System.Drawing.Size(163, 75);
             this.button_als.TabIndex = 1;
             this.button_als.Text = "Thống kê";
             this.button_als.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
