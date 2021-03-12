@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.radioButton_nguoimuon);
             this.groupBox1.Controls.Add(this.radioButton_sach);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -122,7 +122,7 @@ namespace WindowsFormsApp1
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.radioButton_dangmuon);
             this.groupBox2.Controls.Add(this.radioButton_trehan);
             this.groupBox2.Controls.Add(this.radioButton_all);
