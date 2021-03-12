@@ -27,7 +27,18 @@ namespace WindowsFormsApp1
                     {
                         sql.Open();
                         SqlDataAdapter sqlData = new SqlDataAdapter("select mamuon as N'Mã mượn', mathuthu N'Mã thủ thư', Muon.madocgia N'Mã độc giả', masach N'Mã sách', ngaymuon N'Ngày mượn', ngaytra N'Ngày trả', tinhtrangmuon N'Tình trạng mượn', hoten N'Họ và tên', ngaysinh N'Ngày sinh', diachi N'Địa chỉ' from muon join docgia on Muon.madocgia=DocGia.madocgia", SQLConStr.conStr);
+                        DataTable dataTable = new DataTable();
+                        sqlData.Fill(dataTable);
+                        dataGridView_report.DataSource = dataTable;
                     }    
+                }
+                else if(radioButton_dangmuon == true )
+                {
+                    sql.Open();
+                    SqlDataAdapter sqlData = new SqlDataAdapter("select mamuon as N'Mã mượn', mathuthu N'Mã thủ thư', Muon.madocgia N'Mã độc giả', masach N'Mã sách', ngaymuon N'Ngày mượn', ngaytra N'Ngày trả', tinhtrangmuon N'Tình trạng mượn', hoten N'Họ và tên', ngaysinh N'Ngày sinh', diachi N'Địa chỉ' from muon join docgia on Muon.madocgia=DocGia.madocgia", SQLConStr.conStr);
+                    DataTable dataTable = new DataTable();
+                    sqlData.Fill(dataTable);
+                    dataGridView_report.DataSource = dataTable;
                 }    
             }    
         }

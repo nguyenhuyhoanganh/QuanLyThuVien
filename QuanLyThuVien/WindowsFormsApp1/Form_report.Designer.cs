@@ -38,8 +38,8 @@ namespace WindowsFormsApp1
             this.radioButton_nguoimuon = new System.Windows.Forms.RadioButton();
             this.radioButton_sach = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton_datra = new System.Windows.Forms.RadioButton();
-            this.radioButton_chuatra = new System.Windows.Forms.RadioButton();
+            this.radioButton_dangmuon = new System.Windows.Forms.RadioButton();
+            this.radioButton_trehan = new System.Windows.Forms.RadioButton();
             this.radioButton_all = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_report)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -73,7 +73,7 @@ namespace WindowsFormsApp1
             // 
             this.button_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_excel.Image = ((System.Drawing.Image)(resources.GetObject("button_excel.Image")));
-            this.button_excel.Location = new System.Drawing.Point(174, 31);
+            this.button_excel.Location = new System.Drawing.Point(165, 31);
             this.button_excel.Name = "button_excel";
             this.button_excel.Size = new System.Drawing.Size(175, 75);
             this.button_excel.TabIndex = 3;
@@ -117,8 +117,8 @@ namespace WindowsFormsApp1
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton_datra);
-            this.groupBox2.Controls.Add(this.radioButton_chuatra);
+            this.groupBox2.Controls.Add(this.radioButton_dangmuon);
+            this.groupBox2.Controls.Add(this.radioButton_trehan);
             this.groupBox2.Controls.Add(this.radioButton_all);
             this.groupBox2.Location = new System.Drawing.Point(361, 125);
             this.groupBox2.Name = "groupBox2";
@@ -127,27 +127,27 @@ namespace WindowsFormsApp1
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thống kê theo";
             // 
-            // radioButton_datra
+            // radioButton_dangmuon
             // 
-            this.radioButton_datra.AutoSize = true;
-            this.radioButton_datra.Location = new System.Drawing.Point(331, 31);
-            this.radioButton_datra.Name = "radioButton_datra";
-            this.radioButton_datra.Size = new System.Drawing.Size(68, 21);
-            this.radioButton_datra.TabIndex = 9;
-            this.radioButton_datra.TabStop = true;
-            this.radioButton_datra.Text = "Đã trả";
-            this.radioButton_datra.UseVisualStyleBackColor = true;
+            this.radioButton_dangmuon.AutoSize = true;
+            this.radioButton_dangmuon.Location = new System.Drawing.Point(296, 31);
+            this.radioButton_dangmuon.Name = "radioButton_dangmuon";
+            this.radioButton_dangmuon.Size = new System.Drawing.Size(102, 21);
+            this.radioButton_dangmuon.TabIndex = 9;
+            this.radioButton_dangmuon.TabStop = true;
+            this.radioButton_dangmuon.Text = "Đang mượn";
+            this.radioButton_dangmuon.UseVisualStyleBackColor = true;
             // 
-            // radioButton_chuatra
+            // radioButton_trehan
             // 
-            this.radioButton_chuatra.AutoSize = true;
-            this.radioButton_chuatra.Location = new System.Drawing.Point(196, 31);
-            this.radioButton_chuatra.Name = "radioButton_chuatra";
-            this.radioButton_chuatra.Size = new System.Drawing.Size(83, 21);
-            this.radioButton_chuatra.TabIndex = 8;
-            this.radioButton_chuatra.TabStop = true;
-            this.radioButton_chuatra.Text = "Chưa trả";
-            this.radioButton_chuatra.UseVisualStyleBackColor = true;
+            this.radioButton_trehan.AutoSize = true;
+            this.radioButton_trehan.Location = new System.Drawing.Point(178, 31);
+            this.radioButton_trehan.Name = "radioButton_trehan";
+            this.radioButton_trehan.Size = new System.Drawing.Size(79, 21);
+            this.radioButton_trehan.TabIndex = 8;
+            this.radioButton_trehan.TabStop = true;
+            this.radioButton_trehan.Text = "Trễ hạn";
+            this.radioButton_trehan.UseVisualStyleBackColor = true;
             // 
             // radioButton_all
             // 
@@ -192,8 +192,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.RadioButton radioButton_nguoimuon;
         private System.Windows.Forms.RadioButton radioButton_sach;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton_datra;
-        private System.Windows.Forms.RadioButton radioButton_chuatra;
+        private System.Windows.Forms.RadioButton radioButton_dangmuon;
+        private System.Windows.Forms.RadioButton radioButton_trehan;
         private System.Windows.Forms.RadioButton radioButton_all;
     }
 }
