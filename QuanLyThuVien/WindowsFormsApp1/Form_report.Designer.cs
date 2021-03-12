@@ -48,44 +48,48 @@ namespace WindowsFormsApp1
             // 
             // dataGridView_report
             // 
+            this.dataGridView_report.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView_report.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_report.Location = new System.Drawing.Point(13, 228);
             this.dataGridView_report.Name = "dataGridView_report";
             this.dataGridView_report.RowHeadersWidth = 51;
             this.dataGridView_report.RowTemplate.Height = 24;
-            this.dataGridView_report.Size = new System.Drawing.Size(775, 396);
+            this.dataGridView_report.Size = new System.Drawing.Size(1410, 396);
             this.dataGridView_report.TabIndex = 0;
             // 
             // button_als
             // 
+            this.button_als.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_als.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_als.Image = ((System.Drawing.Image)(resources.GetObject("button_als.Image")));
-            this.button_als.Location = new System.Drawing.Point(5, 31);
+            this.button_als.Location = new System.Drawing.Point(80, 31);
             this.button_als.Name = "button_als";
-            this.button_als.Size = new System.Drawing.Size(163, 75);
+            this.button_als.Size = new System.Drawing.Size(175, 75);
             this.button_als.TabIndex = 1;
             this.button_als.Text = "Thống kê";
             this.button_als.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_als.UseVisualStyleBackColor = true;
+            this.button_als.UseVisualStyleBackColor = false;
             this.button_als.Click += new System.EventHandler(this.button_als_Click);
             // 
             // button_excel
             // 
+            this.button_excel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_excel.Image = ((System.Drawing.Image)(resources.GetObject("button_excel.Image")));
-            this.button_excel.Location = new System.Drawing.Point(165, 31);
+            this.button_excel.Location = new System.Drawing.Point(80, 101);
             this.button_excel.Name = "button_excel";
             this.button_excel.Size = new System.Drawing.Size(175, 75);
             this.button_excel.TabIndex = 3;
             this.button_excel.Text = "Làm việc với excel";
             this.button_excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_excel.UseVisualStyleBackColor = true;
+            this.button_excel.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.radioButton_nguoimuon);
             this.groupBox1.Controls.Add(this.radioButton_sach);
-            this.groupBox1.Location = new System.Drawing.Point(388, 13);
+            this.groupBox1.Location = new System.Drawing.Point(432, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(371, 83);
             this.groupBox1.TabIndex = 4;
@@ -117,10 +121,11 @@ namespace WindowsFormsApp1
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Khaki;
             this.groupBox2.Controls.Add(this.radioButton_dangmuon);
             this.groupBox2.Controls.Add(this.radioButton_trehan);
             this.groupBox2.Controls.Add(this.radioButton_all);
-            this.groupBox2.Location = new System.Drawing.Point(361, 125);
+            this.groupBox2.Location = new System.Drawing.Point(809, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(414, 83);
             this.groupBox2.TabIndex = 6;
@@ -165,7 +170,8 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 636);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1432, 636);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button_excel);

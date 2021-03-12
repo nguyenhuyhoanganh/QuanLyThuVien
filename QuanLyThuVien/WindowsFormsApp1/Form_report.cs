@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void button_als_Click(object sender, EventArgs e)
         {
-            if (radioButton_nguoimuon.Checked == true)
+            if (radioButton_sach.Checked == true)
             {
                 if (radioButton_all.Checked == true)
                 {
@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
                     }
                 }
                 else if (radioButton_trehan.Checked == true)
+                {
                     using (SqlConnection sql = new SqlConnection(SQLConStr.conStr))
                     {
                         sql.Open();
@@ -52,7 +53,46 @@ namespace WindowsFormsApp1
                         sqlData.Fill(dataTable);
                         dataGridView_report.DataSource = dataTable;
                     }
-            }    
+                }
+            }
+            if (radioButton_nguoimuon.Checked == true)
+            {
+                {
+                    if (radioButton_all.Checked == true)
+                    {
+                        using (SqlConnection sql = new SqlConnection(SQLConStr.conStr))
+                        {
+                            sql.Open();
+                            SqlDataAdapter sqlData = new SqlDataAdapter("select hoten N'Họ và tên', ngaysinh N'Ngày sinh', diachi N'Địa chỉ', mamuon as N'Mã mượn', mathuthu N'Mã thủ thư', Muon.madocgia N'Mã độc giả', masach N'Mã sách', ngaymuon N'Ngày mượn', ngaytra N'Ngày trả', tinhtrangmuon N'Tình trạng mượn'  from muon join docgia on Muon.madocgia=DocGia.madocgia order by hoten desc", SQLConStr.conStr);
+                            DataTable dataTable = new DataTable();
+                            sqlData.Fill(dataTable);
+                            dataGridView_report.DataSource = dataTable;
+                        }
+                    }
+                    else if (radioButton_dangmuon.Checked == true)
+                    {
+                        using (SqlConnection sql = new SqlConnection(SQLConStr.conStr))
+                        {
+                            sql.Open();
+                            SqlDataAdapter sqlData = new SqlDataAdapter("select hoten N'Họ và tên', ngaysinh N'Ngày sinh', diachi N'Địa chỉ', mamuon as N'Mã mượn', mathuthu N'Mã thủ thư', Muon.madocgia N'Mã độc giả', masach N'Mã sách', ngaymuon N'Ngày mượn', ngaytra N'Ngày trả', tinhtrangmuon N'Tình trạng mượn' from muon join docgia on Muon.madocgia=DocGia.madocgia where tinhtrangmuon=0 order by ngaytra asc", SQLConStr.conStr);
+                            DataTable dataTable = new DataTable();
+                            sqlData.Fill(dataTable);
+                            dataGridView_report.DataSource = dataTable;
+                        }
+                    }
+                    else if (radioButton_trehan.Checked == true)
+                    {
+                        using (SqlConnection sql = new SqlConnection(SQLConStr.conStr))
+                        {
+                            sql.Open();
+                            SqlDataAdapter sqlData = new SqlDataAdapter("select hoten N'Họ và tên', ngaysinh N'Ngày sinh', diachi N'Địa chỉ', mamuon as N'Mã mượn', mathuthu N'Mã thủ thư', Muon.madocgia N'Mã độc giả', masach N'Mã sách', ngaymuon N'Ngày mượn', ngaytra N'Ngày trả', tinhtrangmuon N'Tình trạng mượn', DATEDIFF(day,ngaymuon, ngaytra) as N'Số ngày quá hạn' from muon join docgia on Muon.madocgia=DocGia.madocgia where tinhtrangmuon=1 and ngaytra<getdate() order by DATEDIFF(day,ngaymuon, ngaytra) desc", SQLConStr.conStr);
+                            DataTable dataTable = new DataTable();
+                            sqlData.Fill(dataTable);
+                            dataGridView_report.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
         }
     }
 }
