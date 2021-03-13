@@ -180,7 +180,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button_als);
             this.Controls.Add(this.dataGridView_report);
             this.Name = "Form_report";
-            this.Text = "Form_report";
+            this.Text = "Thống kê báo cáo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_report)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
