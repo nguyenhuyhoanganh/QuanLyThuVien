@@ -90,9 +90,9 @@ namespace WindowsFormsApp1
             this.groupBox1.Controls.Add(this.radioButton_nguoimuon);
             this.groupBox1.Controls.Add(this.radioButton_sach);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(432, 31);
+            this.groupBox1.Location = new System.Drawing.Point(368, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(371, 83);
+            this.groupBox1.Size = new System.Drawing.Size(435, 83);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê theo";
@@ -112,7 +112,7 @@ namespace WindowsFormsApp1
             // radioButton_sach
             // 
             this.radioButton_sach.AutoSize = true;
-            this.radioButton_sach.Location = new System.Drawing.Point(189, 31);
+            this.radioButton_sach.Location = new System.Drawing.Point(254, 31);
             this.radioButton_sach.Name = "radioButton_sach";
             this.radioButton_sach.Size = new System.Drawing.Size(140, 24);
             this.radioButton_sach.TabIndex = 4;
