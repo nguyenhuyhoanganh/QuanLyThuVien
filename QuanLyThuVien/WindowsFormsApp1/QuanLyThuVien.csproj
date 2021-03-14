@@ -82,11 +82,37 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="FormDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocGia.Designer.cs">
+      <DependentUpon>FormDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThuThu.Designer.cs">
+      <DependentUpon>FormThuThu.cs</DependentUpon>
+=======
     <Compile Include="Form_report.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_report.Designer.cs">
       <DependentUpon>Form_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimKiemDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiemDocGia.Designer.cs">
+      <DependentUpon>frmTimKiemDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimKiemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiemSach.Designer.cs">
+      <DependentUpon>frmTimKiemSach.cs</DependentUpon>
+>>>>>>> 2db21895a9a3e2f5a72b78360be1aeb7ddd0541b
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,8 +126,22 @@
     <EmbeddedResource Include="fManager.resx">
       <DependentUpon>fManager.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="FormDocGia.resx">
+      <DependentUpon>FormDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThuThu.resx">
+      <DependentUpon>FormThuThu.cs</DependentUpon>
+=======
     <EmbeddedResource Include="Form_report.resx">
       <DependentUpon>Form_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemDocGia.resx">
+      <DependentUpon>frmTimKiemDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemSach.resx">
+      <DependentUpon>frmTimKiemSach.cs</DependentUpon>
+>>>>>>> 2db21895a9a3e2f5a72b78360be1aeb7ddd0541b
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
