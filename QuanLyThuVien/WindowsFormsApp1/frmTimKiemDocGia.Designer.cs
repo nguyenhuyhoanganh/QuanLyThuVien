@@ -29,15 +29,16 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimKiemDocGia));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTimKiem_Ma = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtMaCanTim = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnTimKiem_Ma = new System.Windows.Forms.Button();
+            this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.TTDocGia_Ma = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtTenCanTim = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,10 +47,10 @@ namespace WindowsFormsApp1
             this.TTDocGia_Ten = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.GroupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TTDocGia_Ma)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TTDocGia_Ten)).BeginInit();
@@ -78,17 +79,45 @@ namespace WindowsFormsApp1
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tìm kiếm theo mã";
             // 
-            // tabPage2
+            // panel1
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Pink;
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(919, 421);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Tìm kiếm theo tên";
+            this.panel1.BackColor = System.Drawing.Color.Moccasin;
+            this.panel1.Controls.Add(this.txtMaCanTim);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnTimKiem_Ma);
+            this.panel1.Location = new System.Drawing.Point(40, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(838, 100);
+            this.panel1.TabIndex = 1;
+            // 
+            // txtMaCanTim
+            // 
+            this.txtMaCanTim.Location = new System.Drawing.Point(269, 21);
+            this.txtMaCanTim.Multiline = true;
+            this.txtMaCanTim.Name = "txtMaCanTim";
+            this.txtMaCanTim.Size = new System.Drawing.Size(365, 32);
+            this.txtMaCanTim.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nhập mã độc giả cần tìm";
+            // 
+            // btnTimKiem_Ma
+            // 
+            this.btnTimKiem_Ma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem_Ma.Location = new System.Drawing.Point(682, 21);
+            this.btnTimKiem_Ma.Name = "btnTimKiem_Ma";
+            this.btnTimKiem_Ma.Size = new System.Drawing.Size(105, 32);
+            this.btnTimKiem_Ma.TabIndex = 0;
+            this.btnTimKiem_Ma.Text = "Tìm kiếm";
+            this.btnTimKiem_Ma.UseVisualStyleBackColor = true;
+            this.btnTimKiem_Ma.Click += new System.EventHandler(this.btnTimKiem_Ma_Click);
             // 
             // GroupBox1
             // 
@@ -102,46 +131,6 @@ namespace WindowsFormsApp1
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Thông tin độc giả";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Moccasin;
-            this.panel1.Controls.Add(this.txtMaCanTim);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnTimKiem_Ma);
-            this.panel1.Location = new System.Drawing.Point(40, 20);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 100);
-            this.panel1.TabIndex = 1;
-            // 
-            // btnTimKiem_Ma
-            // 
-            this.btnTimKiem_Ma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem_Ma.Location = new System.Drawing.Point(682, 21);
-            this.btnTimKiem_Ma.Name = "btnTimKiem_Ma";
-            this.btnTimKiem_Ma.Size = new System.Drawing.Size(105, 32);
-            this.btnTimKiem_Ma.TabIndex = 0;
-            this.btnTimKiem_Ma.Text = "Tìm kiếm";
-            this.btnTimKiem_Ma.UseVisualStyleBackColor = true;
-            this.btnTimKiem_Ma.Click += new System.EventHandler(this.btnTimKiem_Ma_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nhập mã độc giả cần tìm";
-            // 
-            // txtMaCanTim
-            // 
-            this.txtMaCanTim.Location = new System.Drawing.Point(269, 21);
-            this.txtMaCanTim.Multiline = true;
-            this.txtMaCanTim.Name = "txtMaCanTim";
-            this.txtMaCanTim.Size = new System.Drawing.Size(365, 32);
-            this.txtMaCanTim.TabIndex = 2;
-            // 
             // TTDocGia_Ma
             // 
             this.TTDocGia_Ma.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -153,6 +142,18 @@ namespace WindowsFormsApp1
             this.TTDocGia_Ma.RowTemplate.Height = 24;
             this.TTDocGia_Ma.Size = new System.Drawing.Size(832, 207);
             this.TTDocGia_Ma.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Pink;
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(919, 421);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Tìm kiếm theo tên";
             // 
             // panel2
             // 
@@ -224,15 +225,16 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 450);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTimKiemDocGia";
             this.Text = "Tìm kiếm độc giả";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.GroupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TTDocGia_Ma)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -29,30 +29,35 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimKiemSach));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtMaCanTim = new System.Windows.Forms.TextBox();
+            this.TTSach_Ma = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnTimMa = new System.Windows.Forms.Button();
+            this.txtMaCanTim = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TTSach_Ten = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnTimTen = new System.Windows.Forms.Button();
             this.txtTenCanTim = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TTSach_Ma = new System.Windows.Forms.DataGridView();
-            this.TTSach_Ten = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TTSach_Ma)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TTSach_Ten)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -73,33 +78,10 @@ namespace WindowsFormsApp1
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(940, 421);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tìm kiếm theo mã";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.LightGreen;
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(940, 421);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Tìm kiếm theo tên";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Bisque;
-            this.panel1.Controls.Add(this.btnTimMa);
-            this.panel1.Controls.Add(this.txtMaCanTim);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(140, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(763, 100);
-            this.panel1.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -111,23 +93,44 @@ namespace WindowsFormsApp1
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sách";
             // 
-            // label1
+            // TTSach_Ma
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nhập mã sách cần tìm";
+            this.TTSach_Ma.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TTSach_Ma.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.TTSach_Ma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TTSach_Ma.DefaultCellStyle = dataGridViewCellStyle6;
+            this.TTSach_Ma.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TTSach_Ma.Location = new System.Drawing.Point(3, 18);
+            this.TTSach_Ma.Name = "TTSach_Ma";
+            this.TTSach_Ma.RowHeadersWidth = 51;
+            this.TTSach_Ma.RowTemplate.Height = 24;
+            this.TTSach_Ma.Size = new System.Drawing.Size(862, 206);
+            this.TTSach_Ma.TabIndex = 0;
             // 
-            // txtMaCanTim
+            // panel1
             // 
-            this.txtMaCanTim.Location = new System.Drawing.Point(252, 27);
-            this.txtMaCanTim.Multiline = true;
-            this.txtMaCanTim.Name = "txtMaCanTim";
-            this.txtMaCanTim.Size = new System.Drawing.Size(298, 33);
-            this.txtMaCanTim.TabIndex = 1;
+            this.panel1.BackColor = System.Drawing.Color.Bisque;
+            this.panel1.Controls.Add(this.btnTimMa);
+            this.panel1.Controls.Add(this.txtMaCanTim);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(41, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(862, 100);
+            this.panel1.TabIndex = 0;
             // 
             // btnTimMa
             // 
@@ -140,6 +143,36 @@ namespace WindowsFormsApp1
             this.btnTimMa.UseVisualStyleBackColor = true;
             this.btnTimMa.Click += new System.EventHandler(this.btnTimMa_Click);
             // 
+            // txtMaCanTim
+            // 
+            this.txtMaCanTim.Location = new System.Drawing.Point(252, 27);
+            this.txtMaCanTim.Multiline = true;
+            this.txtMaCanTim.Name = "txtMaCanTim";
+            this.txtMaCanTim.Size = new System.Drawing.Size(298, 33);
+            this.txtMaCanTim.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nhập mã sách cần tìm";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.LightGreen;
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(940, 421);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Tìm kiếm theo tên";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.TTSach_Ten);
@@ -150,15 +183,43 @@ namespace WindowsFormsApp1
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sách";
             // 
+            // TTSach_Ten
+            // 
+            this.TTSach_Ten.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TTSach_Ten.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.TTSach_Ten.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TTSach_Ten.DefaultCellStyle = dataGridViewCellStyle8;
+            this.TTSach_Ten.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TTSach_Ten.Location = new System.Drawing.Point(3, 18);
+            this.TTSach_Ten.Name = "TTSach_Ten";
+            this.TTSach_Ten.RowHeadersWidth = 51;
+            this.TTSach_Ten.RowTemplate.Height = 24;
+            this.TTSach_Ten.Size = new System.Drawing.Size(862, 206);
+            this.TTSach_Ten.TabIndex = 0;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.btnTimTen);
             this.panel2.Controls.Add(this.txtTenCanTim);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(138, 31);
+            this.panel2.Location = new System.Drawing.Point(39, 31);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(763, 100);
+            this.panel2.Size = new System.Drawing.Size(862, 100);
             this.panel2.TabIndex = 2;
             // 
             // btnTimTen
@@ -190,30 +251,6 @@ namespace WindowsFormsApp1
             this.label2.TabIndex = 0;
             this.label2.Text = "Nhập tên sách cần tìm";
             // 
-            // TTSach_Ma
-            // 
-            this.TTSach_Ma.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.TTSach_Ma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TTSach_Ma.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TTSach_Ma.Location = new System.Drawing.Point(3, 18);
-            this.TTSach_Ma.Name = "TTSach_Ma";
-            this.TTSach_Ma.RowHeadersWidth = 51;
-            this.TTSach_Ma.RowTemplate.Height = 24;
-            this.TTSach_Ma.Size = new System.Drawing.Size(862, 206);
-            this.TTSach_Ma.TabIndex = 0;
-            // 
-            // TTSach_Ten
-            // 
-            this.TTSach_Ten.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.TTSach_Ten.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TTSach_Ten.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TTSach_Ten.Location = new System.Drawing.Point(3, 18);
-            this.TTSach_Ten.Name = "TTSach_Ten";
-            this.TTSach_Ten.RowHeadersWidth = 51;
-            this.TTSach_Ten.RowTemplate.Height = 24;
-            this.TTSach_Ten.Size = new System.Drawing.Size(862, 206);
-            this.TTSach_Ten.TabIndex = 0;
-            // 
             // frmTimKiemSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -221,19 +258,20 @@ namespace WindowsFormsApp1
             this.ClientSize = new System.Drawing.Size(948, 450);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTimKiemSach";
             this.Text = "Tìm kiếm sách";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TTSach_Ma)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TTSach_Ten)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTSach_Ma)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TTSach_Ten)).EndInit();
             this.ResumeLayout(false);
 
         }
