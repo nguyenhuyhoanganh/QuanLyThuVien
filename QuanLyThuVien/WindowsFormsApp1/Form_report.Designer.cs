@@ -129,10 +129,10 @@ namespace WindowsFormsApp1
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(809, 31);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(414, 83);
+            this.groupBox2.Size = new System.Drawing.Size(448, 83);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thống kê theo";
+            this.groupBox2.Text = "Điều kiện";
             // 
             // radioButton_dangmuon
             // 

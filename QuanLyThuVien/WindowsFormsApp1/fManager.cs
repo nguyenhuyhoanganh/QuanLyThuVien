@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void fManager_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
