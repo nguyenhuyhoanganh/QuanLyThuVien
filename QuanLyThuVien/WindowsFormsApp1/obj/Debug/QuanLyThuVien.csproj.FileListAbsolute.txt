@@ -79,3 +79,6 @@ C:\Users\LOCALBOI\Source\Repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\Win
 C:\Users\LOCALBOI\Source\Repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CopyComplete
 C:\Users\LOCALBOI\Source\Repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\LOCALBOI\Source\Repos\nguyenhuyhoanganh\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\huyho\OneDrive\Desktop\New folder\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+C:\Users\huyho\OneDrive\Desktop\New folder\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\huyho\OneDrive\Desktop\New folder\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
