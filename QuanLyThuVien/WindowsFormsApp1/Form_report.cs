@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 //using ClosedXML;
-using ClosedXML.Excel;
+//using ClosedXML.Excel;
 namespace WindowsFormsApp1
 {
     public partial class Form_report : Form
@@ -104,7 +104,7 @@ namespace WindowsFormsApp1
 
         private void button_excel_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog save = new SaveFileDialog() {Filter="SQLEXPORT|*.xlsx" })
+           /* using (SaveFileDialog save = new SaveFileDialog() {Filter="SQLEXPORT|*.xlsx" })
             {
                 if(save.ShowDialog()==DialogResult.OK)
                 {
@@ -121,7 +121,7 @@ namespace WindowsFormsApp1
                         MessageBox.Show(ex.Message, "Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }    
-            }    
+            }*/    
         }
     }
 }
