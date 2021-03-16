@@ -1,0 +1,8 @@
+﻿
+Form tìm kiếm sách gồm 2 tab:
+-	Tìm kiếm theo mã 
+-	Tìm kiếm theo tên
+
+Tìm kiếm theo mã: Nhập chính xác mã sách cần tìm vào ô textbox sau đó nhấn nút tìm kiếm thì thông tin chi tiết về sách sẽ hiện thị ở bảng Thông tin sách
+
+Tìm kiếm theo tên cũng tương tự: Tìm theo tên không nhất thiết phải nhập chính xác tên. Khi nhập 1 hoặc nhiều chữ cái vào ô text và bấm Tìm kiếm thì bảng Thông tin sách xẽ hiển thị 1 danh sách các cuốn sách có các chữ cái đó
