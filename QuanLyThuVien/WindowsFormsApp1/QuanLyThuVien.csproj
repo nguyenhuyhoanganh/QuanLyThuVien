@@ -64,6 +64,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\BookDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\MuonDAO.cs" />
+    <Compile Include="DTO\Book.cs" />
+    <Compile Include="DTO\DocGia.cs" />
+    <Compile Include="DTO\Muon.cs" />
+    <Compile Include="DTO\ThuThu.cs" />
     <Compile Include="fHelp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +106,12 @@
     </Compile>
     <Compile Include="Form_report.Designer.cs">
       <DependentUpon>Form_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuMuon.designer.cs">
+      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTimKiemDocGia.cs">
       <SubType>Form</SubType>
@@ -150,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_report.resx">
       <DependentUpon>Form_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuMuon.resx">
+      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimKiemDocGia.resx">
       <DependentUpon>frmTimKiemDocGia.cs</DependentUpon>

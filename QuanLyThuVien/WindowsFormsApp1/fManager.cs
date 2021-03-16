@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTV;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace WindowsFormsApp1
 {
@@ -20,6 +22,12 @@ namespace WindowsFormsApp1
         private void fManager_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void danhSáchSáchĐangMượnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMuonTraSach pm = new FrmMuonTraSach();
+            pm.ShowDialog();
         }
     }
 }
