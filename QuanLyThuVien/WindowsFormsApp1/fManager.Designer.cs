@@ -144,7 +144,6 @@
             this.danhSáchSáchĐangMượnToolStripMenuItem.Name = "danhSáchSáchĐangMượnToolStripMenuItem";
             this.danhSáchSáchĐangMượnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.danhSáchSáchĐangMượnToolStripMenuItem.Text = "Lập Phiếu Mượn";
-            this.danhSáchSáchĐangMượnToolStripMenuItem.Click += new System.EventHandler(this.danhSáchSáchĐangMượnToolStripMenuItem_Click);
             // 
             // tìmKiếmSáchToolStripMenuItem
             // 
