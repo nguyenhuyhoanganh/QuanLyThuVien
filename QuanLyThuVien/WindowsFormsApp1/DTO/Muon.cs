@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QLTV.DTO
+namespace WindowsFormsApp1.DTO
 {
     public class Muon
     {

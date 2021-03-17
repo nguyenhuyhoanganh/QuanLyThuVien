@@ -1,4 +1,4 @@
-﻿using QLTV.DTO;
+﻿using WindowsFormsApp1.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QLTV.DAO
+namespace WindowsFormsApp1.DAO
 {
      public class BookDAO
     {

@@ -1,4 +1,4 @@
-﻿using QLTV.DTO;
+﻿using WindowsFormsApp1.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QLTV.DAO;
+using WindowsFormsApp1.DAO;
 using System.Data.SqlClient;
-using WindowsFormsApp1;
 
-namespace QLTV
+
+namespace WindowsFormsApp1
 {
     public partial class FrmMuonTraSach : Form
     {
@@ -83,8 +83,8 @@ namespace QLTV
                 if (dr == DialogResult.Yes)
                 {
 
-                    fManager main = new fManager();
-                    main.Show();
+                    //fManager main = new fManager();
+                    //main.Show();
                     this.Close();
                 }
                 else
@@ -182,8 +182,8 @@ namespace QLTV
                 if (dr == DialogResult.Yes)
                 {
 
-                    fManager main = new fManager();
-                    main.Show();
+                    //fManager main = new fManager();
+                    //main.Show();
                     this.Close();
                 }
                 else

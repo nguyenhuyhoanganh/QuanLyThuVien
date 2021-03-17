@@ -1,5 +1,5 @@
 ﻿
-namespace QLTV
+namespace WindowsFormsApp1
 {
     partial class FrmMuonTraSach
     {

@@ -1,4 +1,4 @@
-﻿//using QLTV;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,7 +50,8 @@ namespace WindowsFormsApp1
 
         private void chiTiếtMượnTrảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ///////////////////////////////////////////THANH GIÚP////////////////////////////////////////////////////////////////////////
+            FrmMuonTraSach pm= new FrmMuonTraSach();
+            pm.Show();
         }
 
         private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)

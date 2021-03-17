@@ -97,7 +97,6 @@ C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ClosedXML.xml
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
-C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.ResolveComReference.cache
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fHelp.resources
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fLogin.resources
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fManager.resources
@@ -115,7 +114,6 @@ C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.c
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CopyComplete
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QLTV.FrmMuonTraSach.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
@@ -146,3 +144,4 @@ C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\Window
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMuonTraSach.resources
