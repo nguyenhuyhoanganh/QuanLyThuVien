@@ -24,10 +24,67 @@ namespace WindowsFormsApp1
 
         }
 
-        /*private void danhSáchSáchĐangMượnToolStripMenuItem_Click(object sender, EventArgs e)
+        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmMuonTraSach pm = new FrmMuonTraSach();
-            pm.ShowDialog();
-        }*/
+            fHelp help = new fHelp();
+            help.Show();
+        }
+
+        private void báoCáoThốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_report report = new Form_report();
+            report.Show();
+        }
+
+        private void tìmKếmSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemSach tksach = new frmTimKiemSach();
+            tksach.Show();
+        }
+
+        private void tìmKiếmĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemDocGia tkdocgia = new frmTimKiemDocGia();
+            tkdocgia.Show();
+        }
+
+        private void chiTiếtMượnTrảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ///////////////////////////////////////////THANH GIÚP////////////////////////////////////////////////////////////////////////
+        }
+
+        private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fTheLoai loaisach = new fTheLoai();
+            loaisach.Show();
+           
+        }
+
+        private void quảnLýThủThưToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fSach sach = new fSach();
+            sach.Show();
+            
+        }
+
+        private void quảnLýĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormThuThu thuthu = new FormThuThu();
+            thuthu.Show();
+           
+        }
+
+        private void thôngTinTácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDocGia docgia = new FormDocGia();
+            docgia.Show();
+            
+        }
+
+        private void quảnLýTácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fTacGia tacgia = new fTacGia();
+            tacgia.Show();
+        }
     }
 }

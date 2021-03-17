@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
     public partial class FormDocGia : Form
     {
         
-        private string connectString = @"Data Source=DESKTOP-E8F4EIG;Initial Catalog=QLTV;Integrated Security=True";
+        private string connectString = SQLConStr.conStr;
         public FormDocGia()
         {
             InitializeComponent();
