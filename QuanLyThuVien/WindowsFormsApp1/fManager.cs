@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace WindowsFormsApp1
 {
     public partial class fManager : Form
     {
+        public DataTable data;
+
         public fManager()
         {
             InitializeComponent();
@@ -21,7 +24,6 @@ namespace WindowsFormsApp1
 
         private void fManager_Load(object sender, EventArgs e)
         {
-
         }
 
         private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -86,6 +88,18 @@ namespace WindowsFormsApp1
         {
             fTacGia tacgia = new fTacGia();
             tacgia.Show();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fThongTinTaiKhoan taikhoan = new fThongTinTaiKhoan();
+            taikhoan.dt = data;
+            taikhoan.Show();
         }
     }
 }

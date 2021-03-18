@@ -227,6 +227,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTimKiemDocGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm độc giả";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

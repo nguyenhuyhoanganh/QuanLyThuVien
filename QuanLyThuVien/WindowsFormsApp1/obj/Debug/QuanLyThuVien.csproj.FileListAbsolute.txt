@@ -134,7 +134,6 @@ C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\Window
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormDocGia.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormThuThu.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form_report.resources
-C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QLTV.FrmMuonTraSach.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemDocGia.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemSach.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fSach.resources
@@ -145,3 +144,6 @@ C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\Window
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CopyComplete
 C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMuonTraSach.resources
+C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMuonTraSach.resources
+C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fThongTinTaiKhoan.resources
+C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fDoiMK.resources
