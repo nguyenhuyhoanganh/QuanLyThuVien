@@ -44,20 +44,20 @@ namespace WindowsFormsApp1
         {
             switch(e.Node.Text)
             {
-                case "Thông tin tài khoản":
+                case "Thông tin tài khoản":         //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\test.txt");
-                        Clipboard.SetImage(Image.FromFile(@"HelpResources\test.jpg"));
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\TTTK.txt");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\TTTK.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DoiMK.jpg"));
                         richtextbox_Display.AppendText("\n");
                         richtextbox_Display.Paste();
                         break;
                     }
-                case "Đăng xuất":
+                case "Đăng xuất":                   //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\test2.txt");
-                        Clipboard.SetImage(Image.FromFile(@"HelpResources\test2.jpg"));
-                        richtextbox_Display.AppendText("\n");
-                        richtextbox_Display.Paste();
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DangXuat.txt");
                         break;
                     }
                 case "Quản lý sách":
