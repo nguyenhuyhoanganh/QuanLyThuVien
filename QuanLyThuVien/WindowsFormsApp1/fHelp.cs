@@ -32,16 +32,12 @@ namespace WindowsFormsApp1
             treeview_Display.Nodes["Management"].Nodes.Add("Quản lý tác giả");
 
             treeview_Display.Nodes.Add("Borrow Detail", "Chi tiết mượn trả");
-            treeview_Display.Nodes["Borrow Detail"].Nodes.Add("Lập phiếu mượn");
-            treeview_Display.Nodes["Borrow Detail"].Nodes.Add("Chi tiết mượn trả");
 
             treeview_Display.Nodes.Add("Search", "Tìm kiếm");
             treeview_Display.Nodes["Search"].Nodes.Add("Tìm kiếm sách");
             treeview_Display.Nodes["Search"].Nodes.Add("Tìm kiếm độc giả");
 
             treeview_Display.Nodes.Add("Statistics", "Báo cáo thống kê");
-            treeview_Display.Nodes["Statistics"].Nodes.Add("Thống kê sách");
-            treeview_Display.Nodes["Statistics"].Nodes.Add("Thống kê độc giả");
         }
 
         private void treeview_Display_AfterSelect(object sender, TreeViewEventArgs e)
@@ -104,19 +100,16 @@ namespace WindowsFormsApp1
                         richtextbox_Display.Paste();
                         break;
                     }
-                case "Lập phiếu mượn":
+                case "Chi tiết mượn trả":           //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\test2.txt");
-                        Clipboard.SetImage(Image.FromFile(@"HelpResources\test2.jpg"));
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\MuonSach.txt");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\MuonSach.jpg"));
                         richtextbox_Display.AppendText("\n");
                         richtextbox_Display.Paste();
-                        break;
-                    }
-                case "Chi tiết mượn trả":
-                    {
-                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\test2.txt");
-                        Clipboard.SetImage(Image.FromFile(@"HelpResources\test2.jpg"));
                         richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.AppendText(File.ReadAllText(@"HelpResources\TraSach.txt"));
+                        richtextbox_Display.AppendText("\n");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\TraSach.jpg"));
                         richtextbox_Display.Paste();
                         break;
                     }
@@ -136,15 +129,7 @@ namespace WindowsFormsApp1
                         richtextbox_Display.Paste();
                         break;
                     }
-                case "Thống kê sách":
-                    {
-                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\test2.txt");
-                        Clipboard.SetImage(Image.FromFile(@"HelpResources\test2.jpg"));
-                        richtextbox_Display.AppendText("\n");
-                        richtextbox_Display.Paste();
-                        break;
-                    }
-                case "Thống kê độc giả":
+                case "Báo cáo thống kê":
                     {
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\test2.txt");
                         Clipboard.SetImage(Image.FromFile(@"HelpResources\test2.jpg"));
