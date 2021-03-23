@@ -37,7 +37,6 @@ D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ClosedXML.xml
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
-D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.ResolveComReference.cache
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fHelp.resources
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fLogin.resources
 D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fManager.resources
@@ -147,3 +146,6 @@ C:\GITHUB\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMuonTraSach.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fThongTinTaiKhoan.resources
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm QLTV\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fDoiMK.resources
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fDoiMK.resources
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMuonTraSach.resources
+D:\TTNhom\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fThongTinTaiKhoan.resources

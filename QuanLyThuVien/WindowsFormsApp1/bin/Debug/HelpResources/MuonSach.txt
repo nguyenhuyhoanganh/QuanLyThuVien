@@ -1,0 +1,6 @@
+﻿
+Chức năng form mượn sách(bên mượn sách): Tạo phiếu mượn mới ,nhập vào mã phiếu mượn, chọn mã độc giả , mã thủ thư , nhập vào mã sách hoặc chọn sách ở dưới danh sách sách trong datagridview, chọn ngày mượn , chọn ngày trả  (Ngày trả tự động set mượn sách 5 ngày , nếu muốn mượn thêm chỉ mượn được nhiều nhất 30 ngày ) Nhấn ‘Mượn sách’ để tạo phiếu mượn mới
+
+Nhấn ‘Làm mới để ’ load lại danh sách sách dưới datagridview
+
+Nhấn ‘Thoát ’ để thoát form mượn sách
