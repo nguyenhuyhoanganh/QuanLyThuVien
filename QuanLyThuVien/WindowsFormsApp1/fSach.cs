@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.DTO;
 
 namespace WindowsFormsApp1
 {
@@ -16,83 +17,68 @@ namespace WindowsFormsApp1
         public fSach()
         {
             InitializeComponent();
+            load();
         }
-        DataTable ExecuteQuery(string query, object[] parameter = null)
+        void load()
         {
-            DataTable data = new DataTable();
-
-            using (SqlConnection connection = new SqlConnection(SQLConStr.conStr))
-            {
-
-                connection.Open();
-
-                SqlCommand command = new SqlCommand(query, connection);
-
-                if (parameter != null)
-                {
-                    string[] temp = query.Split(' ');
-                    List<string> listPara = new List<string>();
-                    foreach (string item in temp)
-                    {
-                        if (item[0] == '@')
-                            listPara.Add(item);
-                    }
-                    for (int i = 0; i < parameter.Length; i++)
-                    {
-                        command.Parameters.AddWithValue(listPara[i], parameter[i]);
-                    }
-                }
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(data);
-
-
-                connection.Close();
-            }
-            return data;
+            dtgvSach.DataSource = DataProvider.Instance.ExecuteQuery("Select * from Sach");
         }
-
-        int ExecuteNonQuery(string query, object[] parameter = null)
-        {
-            int acceptedRows = 0;
-
-            using (SqlConnection connection = new SqlConnection(SQLConStr.conStr))
-            {
-
-                connection.Open();
-
-                SqlCommand command = new SqlCommand(query, connection);
-
-                if (parameter != null)
-                {
-                    string[] temp = query.Split(' ');
-                    List<string> listPara = new List<string>();
-                    foreach (string item in temp)
-                    {
-                        if (item[0] == '@')
-                            listPara.Add(item);
-                    }
-                    for (int i = 0; i < parameter.Length; i++)
-                    {
-                        command.Parameters.AddWithValue(listPara[i], parameter[i]);
-                    }
-                }
-                //thực thi câu query chả về số dòng câu truy vấn thực hiện được
-                acceptedRows = -1;
-                try
-                {
-                    acceptedRows = command.ExecuteNonQuery();
-                }
-                catch { }
-                connection.Close();
-            }
-
-            return acceptedRows;
-        }
-
         private void btnXemS_Click(object sender, EventArgs e)
         {
-            string query = "select * from Sach";
-            dtgvSach.DataSource = ExecuteQuery(query);
+            load();
+        }
+
+        private void dtgvSach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbMaSach.DataBindings.Clear();
+            txbMaSach.DataBindings.Add("text", dtgvSach.DataSource, "masach");
+            txbMaLoaiSach_S.DataBindings.Clear();
+            txbMaLoaiSach_S.DataBindings.Add("text", dtgvSach.DataSource, "maloaisach");
+            txbMaTG_S.DataBindings.Clear();
+            txbMaTG_S.DataBindings.Add("text", dtgvSach.DataSource, "matg");
+            txbTenSach.DataBindings.Clear();
+            txbTenSach.DataBindings.Add("text", dtgvSach.DataSource, "tensach");
+            dtpkNgayNhapS.DataBindings.Clear();
+            dtpkNgayNhapS.DataBindings.Add("text", dtgvSach.DataSource, "ngaynhap");
+            if(dtgvSach.Rows[e.RowIndex].Cells[5].Value.ToString() == "True")
+            {
+                cbTinhTrang.Text = "Đang Mượn";
+            }else    
+                cbTinhTrang.Text = "Chưa Mượn";
+            
+        }
+        bool kiemTraEmpty()
+        {
+            if (txbMaLoaiSach_S.Text=="" && txbMaSach.Text=="" && txbMaTG_S.Text=="" && txbTenSach.Text=="") return false;
+            else return true;
+        }
+        private void btnThemS_Click(object sender, EventArgs e)
+        {
+            int rez = 0;
+            cbTinhTrang.Text = "Chưa Mượn";
+            if(kiemTraEmpty())
+            {
+                try
+                {
+                    string tinhtrang = "";
+                    string ngaynhap = "";
+                    if (cbTinhTrang.Text == "Đang Mượn")
+                        tinhtrang = "1";
+                    else tinhtrang = "0";
+                    ngaynhap = dtpkNgayNhapS.Value.ToString("MM/dd/yyyy");
+                    string que = "Insert into sach(masach, maloaisach, matg, manxb, tensach, tinhtrang, ngaynhap) values('"+txbMaSach.Text+"','"+txbMaLoaiSach_S.Text+"','"+txbMaTG_S.Text+"','NXB01','"+txbTenSach.Text+"',"+tinhtrang+", '"+ngaynhap+"')";
+                    rez = DataProvider.Instance.ExecuteNonQuery(que);
+                    if (rez > 0)
+                    {
+                        MessageBox.Show("Thêm thành công");
+                        load();
+                    }
+                    else MessageBox.Show("Thêm không thành công");
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("Hãy chỉnh sửa thông tin");
+                }
+            }    
         }
     }
 }
