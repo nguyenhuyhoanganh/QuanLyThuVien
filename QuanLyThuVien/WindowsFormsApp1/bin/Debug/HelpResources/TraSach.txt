@@ -1,0 +1,10 @@
+﻿
+Chức năng form mượn sách(bên trả sách): Để trả sách , chọn thông tin phiếu mượn(ứng với mỗi dòng) ở dưới phần datagridview , nhấn vào dòng nào, sẽ hiện lên thông tin phiếu mượn của dòng đấy , ấn ‘Trả’ để trả sách.
+
+Nhấn ‘Gia hạn’ để gia hạn ngày trả + 5 ngày 
+
+Nếu không tìm thấy thông tin phiếu mượn bên dưới, có thể nhập mã độc giả vào ô cạnh nút ‘Tìm kiếm’, nhấn ’Tìm kiếm’ để hiện thông tin bên dưới
+
+Nhấn ‘Làm mới để ’ load lại danh sách sách dưới datagridview
+
+Nhấn ‘Thoát ’ để thoát form mượn sách

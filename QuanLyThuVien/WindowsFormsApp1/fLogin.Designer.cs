@@ -35,7 +35,7 @@
             this.txbPassWord = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnSignIn = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,6 +57,7 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(245, 25);
             this.txbUserName.TabIndex = 1;
+            this.txbUserName.Text = "admin";
             // 
             // label1
             // 
@@ -83,6 +84,7 @@
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(245, 25);
             this.txbPassWord.TabIndex = 1;
+            this.txbPassWord.Text = "1";
             // 
             // label2
             // 
@@ -96,7 +98,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnSignIn);
+            this.panel3.Controls.Add(this.btnExit);
             this.panel3.Controls.Add(this.btnSignUp);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.panel2);
@@ -105,14 +107,15 @@
             this.panel3.Size = new System.Drawing.Size(446, 237);
             this.panel3.TabIndex = 2;
             // 
-            // btnSignIn
+            // btnExit
             // 
-            this.btnSignIn.Location = new System.Drawing.Point(242, 160);
-            this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(140, 35);
-            this.btnSignIn.TabIndex = 3;
-            this.btnSignIn.Text = "Đăng Ký";
-            this.btnSignIn.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(242, 160);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(140, 35);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSignUp
             // 
@@ -152,7 +155,7 @@
         private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSignUp;
     }
 }

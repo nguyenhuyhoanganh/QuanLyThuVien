@@ -1,0 +1,12 @@
+﻿
+Form gồm các chức năng:
+
+-	Thêm: Nhấn thêm và sau đó nhập đầy đủ thông tin của độc giả sau đó nhấn thêm để thêm.
+
+-	Sửa: Chọn 1 trường thông tin trong bảng dữ liệu để thay đổi giá trị hoặc có thể sửa đổi nhiều trường giá trị ở các ô dữ liệu.
+
+-	Xóa: xóa thông tin của 1 độc giả đang được chọn trong bảng dữ liệu cùng với những thông tin liên quan với nó trong dữ liệu.
+
+-	Tìm kiếm: Tìm kiếm nhanh theo mã thủ thư và mã độc giả đã được lưu.
+
+-	Refress: làm mới và cập nhật lại tất cả dữ liệu, trong trường hợp lỗi có thể nhấn refress để trở lại bình thường.

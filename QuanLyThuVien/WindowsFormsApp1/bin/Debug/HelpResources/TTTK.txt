@@ -1,0 +1,9 @@
+﻿
+Thông Tin Tài Khoản:
+
+-> Hiển thị thông tin người dung gồm : tên, tuổi, giới tính, địa chỉ, số điện thoại, ngày sinh
+
+Đổi Mật Khẩu:
+
+-> Đổi Mật Khẩu Người Dùng
+

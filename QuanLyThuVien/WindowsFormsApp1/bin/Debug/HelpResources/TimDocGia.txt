@@ -1,0 +1,6 @@
+﻿
+Form tìm kiếm độc giả cũng có chức năng tương tự:
+
+-	Muốn tìm độc giả theo mã: ta nhập chính xác mã của độc giả cần tìm rồi bấm nút Tìm kiếm, bảng Thông tin độc giả sẽ hiện thị độc giả cần tìm 
+
+-	Tìm độc giả theo tên: Khi nhập 1 hoặc nhiều chữ cái vào ô text và bấm Tìm kiếm thì bảng Thông tin độc giả xẽ hiển thị 1 danh sách các độc giả có các chữ cái đó

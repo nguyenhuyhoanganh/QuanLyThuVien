@@ -13,7 +13,10 @@ namespace WindowsFormsApp1
 {
     public partial class FormThuThu : Form
     {
-        private string connectString = @"Data Source=DESKTOP-E8F4EIG;Initial Catalog=QLTV;Integrated Security=True";
+        //private string connectString = @"Data Source=DESKTOP-E8F4EIG;Initial Catalog=QLTV;Integrated Security=True";
+        // bro, có class SQLConStr để dùng chung cái connection string đc mà. Đừng dùng tên máy riêng vào chạy là lỗi
+        // from thịnh with luv
+        public static string connectString = SQLConStr.conStr;
         public FormThuThu()
         {
             InitializeComponent();
