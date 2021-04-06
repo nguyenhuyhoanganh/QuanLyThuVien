@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
             {
                 try
                 {
-                    string que = "Insert into tacgia(matg,tentg,lienhe) values ('"+textBox2.Text+"','"+textBox1.Text+"','"+textBox3.Text+"')";
+                    string que = "Insert into tacgia(matg,tentg,lienhe) values ('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "')";
                     rez = DataProvider.Instance.ExecuteNonQuery(que);
                     if (rez != 0)
                     {
@@ -45,9 +45,9 @@ namespace WindowsFormsApp1
                     else
                     {
                         MessageBox.Show("Thêm không thành công");
-                    }    
+                    }
                 }
-                catch(Exception ex)
+                catch { }
                 {
                     MessageBox.Show("Mã đã tồn tại");
                 }

@@ -57,6 +57,7 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(245, 25);
             this.txbUserName.TabIndex = 1;
+            this.txbUserName.Text = "admin";
             // 
             // label1
             // 
@@ -83,6 +84,7 @@
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(245, 25);
             this.txbPassWord.TabIndex = 1;
+            this.txbPassWord.Text = "1";
             // 
             // label2
             // 

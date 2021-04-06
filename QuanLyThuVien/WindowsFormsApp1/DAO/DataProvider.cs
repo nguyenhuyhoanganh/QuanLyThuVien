@@ -12,8 +12,8 @@ namespace WindowsFormsApp1.DTO
     public class DataProvider
     {
         private static DataProvider instance;
-        //private string connectionSTR = @"Data Source=.\sqlexpress;Initial Catalog=QLTV;Integrated Security=True";
-        private string connectionSTR = @"Data Source=DESKTOP-E8F4EIG;Initial Catalog=QLTV;Integrated Security=True";
+        private string connectionSTR = SQLConStr.conStr;
+        //private string connectionSTR = @"Data Source=DESKTOP-E8F4EIG;Initial Catalog=QLTV;Integrated Security=True";
 
         public static DataProvider Instance 
         {

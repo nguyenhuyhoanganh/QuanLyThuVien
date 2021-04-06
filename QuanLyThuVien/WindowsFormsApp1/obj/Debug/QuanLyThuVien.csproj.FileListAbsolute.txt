@@ -181,3 +181,40 @@ D:\QA\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.cspro
 D:\QA\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CopyComplete
 D:\QA\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\QA\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\System.IO.Packaging.dll
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fDoiMK.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fHelp.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fLogin.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fManager.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormDocGia.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormThuThu.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form_report.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMuonTraSach.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemDocGia.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemSach.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fSach.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTacGia.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTheLoai.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fThongTinTaiKhoan.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fQuanLy.resources
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\Guna.UI2.dll
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\bin\Debug\Icons8.UI.dll
+C:\Users\huyho\OneDrive\Desktop\QL ThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fDangNhap.resources

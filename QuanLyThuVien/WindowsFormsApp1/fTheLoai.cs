@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
                         MessageBox.Show("Thêm không thành công");
                     }
                 }
-                catch (Exception ex)
+                catch { }
                 {
                     MessageBox.Show("Mã đã tồn tại");
                 }

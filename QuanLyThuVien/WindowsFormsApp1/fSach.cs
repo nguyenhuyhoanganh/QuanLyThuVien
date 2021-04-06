@@ -17,15 +17,15 @@ namespace WindowsFormsApp1
         public fSach()
         {
             InitializeComponent();
-            load();
+            
         }
         void load()
         {
-            dtgvSach.DataSource = DataProvider.Instance.ExecuteQuery("Select * from Sach");
+            
         }
         private void btnXemS_Click(object sender, EventArgs e)
         {
-            load();
+            dtgvSach.DataSource = DataProvider.Instance.ExecuteQuery("Select * from Sach");
         }
 
         private void dtgvSach_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -71,10 +71,11 @@ namespace WindowsFormsApp1
                     if (rez > 0)
                     {
                         MessageBox.Show("Thêm thành công");
-                        load();
+                        btnXemS_Click(sender,e);
                     }
                     else MessageBox.Show("Thêm không thành công");
-                }catch(Exception ex)
+                }
+                catch { }
                 {
                     MessageBox.Show("Hãy chỉnh sửa thông tin");
                 }
