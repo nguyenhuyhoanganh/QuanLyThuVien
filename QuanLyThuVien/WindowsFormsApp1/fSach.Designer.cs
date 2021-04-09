@@ -331,7 +331,7 @@
             // 
             this.dtgvSach.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dtgvSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvSach.Location = new System.Drawing.Point(19, 347);
+            this.dtgvSach.Location = new System.Drawing.Point(48, 321);
             this.dtgvSach.Name = "dtgvSach";
             this.dtgvSach.RowHeadersWidth = 51;
             this.dtgvSach.RowTemplate.Height = 24;
@@ -352,7 +352,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 653);
+            this.ClientSize = new System.Drawing.Size(1041, 711);
             this.Controls.Add(this.panelTimKiem);
             this.Controls.Add(this.dtgvSach);
             this.Controls.Add(this.txbTimKiemSach);

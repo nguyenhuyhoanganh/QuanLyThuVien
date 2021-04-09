@@ -79,6 +79,10 @@ namespace WindowsFormsApp1
                 {
                     MessageBox.Show("Hãy chỉnh sửa thông tin");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Hãy Thêm Thông Tin!!!");
             }    
         }
     }

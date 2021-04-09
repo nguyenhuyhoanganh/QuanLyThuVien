@@ -142,6 +142,10 @@ namespace WindowsFormsApp1
             //if (activeForm != null)
             //activeForm.Close();
             //openForm(new fBanVe());
+
+            if (activeForm != null)
+                activeForm.Close();
+
         }
 
         #endregion
@@ -376,41 +380,49 @@ namespace WindowsFormsApp1
         private void btnLoaiSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnLoaiSach);
+            openForm(new fTheLoai());
         }
 
         private void btnThuThu_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnThuThu);
+            openForm(new FormThuThu());
         }
 
         private void btnDocGia_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnDocGia);
+            openForm(new FormDocGia());
         }
 
         private void btnTacGia_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnTacGia);
+            openForm(new fTacGia());
         }
 
         private void btnTKSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnTKSach);
+            openForm(new frmTimKiemSach());
         }
 
         private void btnTKDocGia_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnTKDocGia);
+            openForm(new frmTimKiemDocGia());
         }
 
         private void btnMuonSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnMuonSach);
+            openForm(new FrmMuonTraSach());
         }
 
         private void btnTraSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnTraSach);
+            openForm(new FrmMuonTraSach());
         }
 
         private void fQuanLy_Load(object sender, EventArgs e)

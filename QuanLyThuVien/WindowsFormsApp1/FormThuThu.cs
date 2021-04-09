@@ -315,5 +315,10 @@ values('" + textBoxMaDG.Text + "', '" + textBoxTenDG.Text + "', '" + textBoxNgay
             /*string dateFormat = dateTimePicker1.Value.ToString("mm/dd/yyyy");
             textBoxNgaySinh.Text = dateFormat;*/
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

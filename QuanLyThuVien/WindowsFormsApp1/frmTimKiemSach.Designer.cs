@@ -64,7 +64,7 @@ namespace WindowsFormsApp1
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(948, 450);
+            this.tabControl1.Size = new System.Drawing.Size(972, 653);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(940, 421);
+            this.tabPage1.Size = new System.Drawing.Size(964, 624);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tìm kiếm theo mã";
             // 
@@ -149,7 +149,7 @@ namespace WindowsFormsApp1
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(940, 421);
+            this.tabPage2.Size = new System.Drawing.Size(964, 624);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tìm kiếm theo tên";
             // 
@@ -219,7 +219,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 450);
+            this.ClientSize = new System.Drawing.Size(972, 653);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
