@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
             
         }
 
-        /*private void fThongTinTaiKhoan_Load(object sender, EventArgs e)
+        private void fThongTinTaiKhoan_Load(object sender, EventArgs e)
         {
             txbHoTen.Text = dt.Rows[0]["hoten"].ToString();
             dtpkNgaySinh.Value = (DateTime)dt.Rows[0]["ngaysinh"];
@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
                 txbGioiTinh.Text = "Nam";
             txbDiaChi.Text = dt.Rows[0]["diachi"].ToString();
             txbSDT.Text = dt.Rows[0]["sdt"].ToString();
-        }*/
+        }
 
         private void btnDoiMK_Click(object sender, EventArgs e)
         {

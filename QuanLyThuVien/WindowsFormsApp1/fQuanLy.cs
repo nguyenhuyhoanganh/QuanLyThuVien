@@ -370,7 +370,7 @@ namespace WindowsFormsApp1
         private void btnSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnSach);
-            openForm(new fSach());
+            openForm(new fSachR());
         }
 
         private void btnLoaiSach_Click(object sender, EventArgs e)

@@ -38,48 +38,47 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnThuThu = new Guna.UI2.WinForms.Guna2Button();
             this.panelIcon = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnStatus7 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStatus6 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStatus5 = new Guna.UI2.WinForms.Guna2Button();
             this.lbTillerBar = new System.Windows.Forms.Label();
-            this.btnStatus3 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStatus4 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStatus2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStatus1 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMinimize = new Guna.UI2.WinForms.Guna2Button();
-            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnLoaiSach = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnSout = new Guna.UI2.WinForms.Guna2Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.btnTroGiup = new Guna.UI2.WinForms.Guna2Button();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panelSubMuonTra = new System.Windows.Forms.Panel();
             this.btnTraSach = new Guna.UI2.WinForms.Guna2Button();
             this.btnMuonSach = new Guna.UI2.WinForms.Guna2Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.btnMuonTra = new Guna.UI2.WinForms.Guna2Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btnSignOut = new Guna.UI2.WinForms.Guna2Button();
             this.panelSubTimKiem = new System.Windows.Forms.Panel();
             this.btnTKDocGia = new Guna.UI2.WinForms.Guna2Button();
             this.btnTKSach = new Guna.UI2.WinForms.Guna2Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panelSubQuanLy = new System.Windows.Forms.Panel();
             this.btnSach = new Guna.UI2.WinForms.Guna2Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.btnQuanLy = new Guna.UI2.WinForms.Guna2Button();
             this.panelForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnStatus7 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStatus6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStatus5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStatus3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStatus4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStatus2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStatus1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMinimize = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTroGiup = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMuonTra = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLy = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelIcon.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -90,7 +89,6 @@
             this.panel14.SuspendLayout();
             this.panelSubTimKiem.SuspendLayout();
             this.panelSubQuanLy.SuspendLayout();
-            this.panelForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTacGia
@@ -218,20 +216,6 @@
             this.panelIcon.Size = new System.Drawing.Size(210, 100);
             this.panelIcon.TabIndex = 0;
             // 
-            // btnHome
-            // 
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::WindowsFormsApp1.Properties.Resources.icons8_book_shelf_50;
-            this.btnHome.Location = new System.Drawing.Point(0, 0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(210, 100);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
             // panelTitleBar
             // 
             this.panelTitleBar.Controls.Add(this.btnStatus7);
@@ -250,6 +234,315 @@
             this.panelTitleBar.Size = new System.Drawing.Size(972, 100);
             this.panelTitleBar.TabIndex = 4;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // lbTillerBar
+            // 
+            this.lbTillerBar.AutoSize = true;
+            this.lbTillerBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.lbTillerBar.Location = new System.Drawing.Point(65, 57);
+            this.lbTillerBar.Name = "lbTillerBar";
+            this.lbTillerBar.Size = new System.Drawing.Size(45, 17);
+            this.lbTillerBar.TabIndex = 6;
+            this.lbTillerBar.Text = "Home";
+            // 
+            // btnLoaiSach
+            // 
+            this.btnLoaiSach.BorderRadius = 8;
+            this.btnLoaiSach.CheckedState.Parent = this.btnLoaiSach;
+            this.btnLoaiSach.CustomImages.Parent = this.btnLoaiSach;
+            this.btnLoaiSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLoaiSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnLoaiSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLoaiSach.ForeColor = System.Drawing.Color.White;
+            this.btnLoaiSach.HoverState.Parent = this.btnLoaiSach;
+            this.btnLoaiSach.Location = new System.Drawing.Point(0, 46);
+            this.btnLoaiSach.Name = "btnLoaiSach";
+            this.btnLoaiSach.ShadowDecoration.Parent = this.btnLoaiSach;
+            this.btnLoaiSach.Size = new System.Drawing.Size(196, 45);
+            this.btnLoaiSach.TabIndex = 9;
+            this.btnLoaiSach.Text = "Loại Sách";
+            this.btnLoaiSach.Click += new System.EventHandler(this.btnLoaiSach_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panelIcon);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(210, 753);
+            this.panel1.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.panelMenu);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 100);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(210, 653);
+            this.panel6.TabIndex = 1;
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.panelMenu.Controls.Add(this.btnSout);
+            this.panelMenu.Controls.Add(this.panel13);
+            this.panelMenu.Controls.Add(this.btnTroGiup);
+            this.panelMenu.Controls.Add(this.panel17);
+            this.panelMenu.Controls.Add(this.btnThongKe);
+            this.panelMenu.Controls.Add(this.panel16);
+            this.panelMenu.Controls.Add(this.panelSubMuonTra);
+            this.panelMenu.Controls.Add(this.panel14);
+            this.panelMenu.Controls.Add(this.btnMuonTra);
+            this.panelMenu.Controls.Add(this.panel12);
+            this.panelMenu.Controls.Add(this.btnSignOut);
+            this.panelMenu.Controls.Add(this.panelSubTimKiem);
+            this.panelMenu.Controls.Add(this.panel11);
+            this.panelMenu.Controls.Add(this.btnTimKiem);
+            this.panelMenu.Controls.Add(this.panel10);
+            this.panelMenu.Controls.Add(this.panelSubQuanLy);
+            this.panelMenu.Controls.Add(this.btnQuanLy);
+            this.panelMenu.Controls.Add(this.panel8);
+            this.panelMenu.Controls.Add(this.btnTaiKhoan);
+            this.panelMenu.Controls.Add(this.panel5);
+            this.panelMenu.Controls.Add(this.panel3);
+            this.panelMenu.Controls.Add(this.panel2);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMenu.Location = new System.Drawing.Point(0, 1);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(210, 652);
+            this.panelMenu.TabIndex = 1;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(7, 713);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(196, 1);
+            this.panel13.TabIndex = 26;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel17.Location = new System.Drawing.Point(7, 667);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(196, 1);
+            this.panel17.TabIndex = 24;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel16.Location = new System.Drawing.Point(7, 621);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(196, 1);
+            this.panel16.TabIndex = 22;
+            // 
+            // panelSubMuonTra
+            // 
+            this.panelSubMuonTra.Controls.Add(this.btnTraSach);
+            this.panelSubMuonTra.Controls.Add(this.btnMuonSach);
+            this.panelSubMuonTra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMuonTra.Location = new System.Drawing.Point(7, 521);
+            this.panelSubMuonTra.Name = "panelSubMuonTra";
+            this.panelSubMuonTra.Size = new System.Drawing.Size(196, 100);
+            this.panelSubMuonTra.TabIndex = 21;
+            // 
+            // btnTraSach
+            // 
+            this.btnTraSach.BorderRadius = 8;
+            this.btnTraSach.CheckedState.Parent = this.btnTraSach;
+            this.btnTraSach.CustomImages.Parent = this.btnTraSach;
+            this.btnTraSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTraSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnTraSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTraSach.ForeColor = System.Drawing.Color.White;
+            this.btnTraSach.HoverState.Parent = this.btnTraSach;
+            this.btnTraSach.Location = new System.Drawing.Point(0, 45);
+            this.btnTraSach.Name = "btnTraSach";
+            this.btnTraSach.ShadowDecoration.Parent = this.btnTraSach;
+            this.btnTraSach.Size = new System.Drawing.Size(196, 45);
+            this.btnTraSach.TabIndex = 12;
+            this.btnTraSach.Text = "Trả Sách";
+            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
+            // 
+            // btnMuonSach
+            // 
+            this.btnMuonSach.BorderRadius = 8;
+            this.btnMuonSach.CheckedState.Parent = this.btnMuonSach;
+            this.btnMuonSach.CustomImages.Parent = this.btnMuonSach;
+            this.btnMuonSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMuonSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnMuonSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMuonSach.ForeColor = System.Drawing.Color.White;
+            this.btnMuonSach.HoverState.Parent = this.btnMuonSach;
+            this.btnMuonSach.Location = new System.Drawing.Point(0, 0);
+            this.btnMuonSach.Name = "btnMuonSach";
+            this.btnMuonSach.ShadowDecoration.Parent = this.btnMuonSach;
+            this.btnMuonSach.Size = new System.Drawing.Size(196, 45);
+            this.btnMuonSach.TabIndex = 11;
+            this.btnMuonSach.Text = "Mượn Sách";
+            this.btnMuonSach.Click += new System.EventHandler(this.btnMuonSach_Click);
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel14.Controls.Add(this.panel18);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel14.Location = new System.Drawing.Point(7, 520);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(196, 1);
+            this.panel14.TabIndex = 16;
+            // 
+            // panel18
+            // 
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(196, 100);
+            this.panel18.TabIndex = 22;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(7, 474);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(196, 1);
+            this.panel12.TabIndex = 13;
+            // 
+            // btnSignOut
+            // 
+            this.btnSignOut.CheckedState.Parent = this.btnSignOut;
+            this.btnSignOut.CustomImages.Parent = this.btnSignOut;
+            this.btnSignOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnSignOut.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnSignOut.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnSignOut.HoverState.Parent = this.btnSignOut;
+            this.btnSignOut.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSignOut.Location = new System.Drawing.Point(15, 590);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnSignOut.ShadowDecoration.Parent = this.btnSignOut;
+            this.btnSignOut.Size = new System.Drawing.Size(50, 50);
+            this.btnSignOut.TabIndex = 12;
+            // 
+            // panelSubTimKiem
+            // 
+            this.panelSubTimKiem.Controls.Add(this.btnTKDocGia);
+            this.panelSubTimKiem.Controls.Add(this.btnTKSach);
+            this.panelSubTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubTimKiem.Location = new System.Drawing.Point(7, 374);
+            this.panelSubTimKiem.Name = "panelSubTimKiem";
+            this.panelSubTimKiem.Size = new System.Drawing.Size(196, 100);
+            this.panelSubTimKiem.TabIndex = 11;
+            // 
+            // btnTKDocGia
+            // 
+            this.btnTKDocGia.BorderRadius = 8;
+            this.btnTKDocGia.CheckedState.Parent = this.btnTKDocGia;
+            this.btnTKDocGia.CustomImages.Parent = this.btnTKDocGia;
+            this.btnTKDocGia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTKDocGia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnTKDocGia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTKDocGia.ForeColor = System.Drawing.Color.White;
+            this.btnTKDocGia.HoverState.Parent = this.btnTKDocGia;
+            this.btnTKDocGia.Location = new System.Drawing.Point(0, 45);
+            this.btnTKDocGia.Name = "btnTKDocGia";
+            this.btnTKDocGia.ShadowDecoration.Parent = this.btnTKDocGia;
+            this.btnTKDocGia.Size = new System.Drawing.Size(196, 45);
+            this.btnTKDocGia.TabIndex = 12;
+            this.btnTKDocGia.Text = "Tìm Kiếm Độc Giả";
+            this.btnTKDocGia.Click += new System.EventHandler(this.btnTKDocGia_Click);
+            // 
+            // btnTKSach
+            // 
+            this.btnTKSach.BorderRadius = 8;
+            this.btnTKSach.CheckedState.Parent = this.btnTKSach;
+            this.btnTKSach.CustomImages.Parent = this.btnTKSach;
+            this.btnTKSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTKSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnTKSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTKSach.ForeColor = System.Drawing.Color.White;
+            this.btnTKSach.HoverState.Parent = this.btnTKSach;
+            this.btnTKSach.Location = new System.Drawing.Point(0, 0);
+            this.btnTKSach.Name = "btnTKSach";
+            this.btnTKSach.ShadowDecoration.Parent = this.btnTKSach;
+            this.btnTKSach.Size = new System.Drawing.Size(196, 45);
+            this.btnTKSach.TabIndex = 11;
+            this.btnTKSach.Text = "Tìm Kiếm Sách";
+            this.btnTKSach.Click += new System.EventHandler(this.btnTKSach_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(7, 373);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(196, 1);
+            this.panel11.TabIndex = 10;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(7, 327);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(196, 1);
+            this.panel10.TabIndex = 8;
+            // 
+            // panelSubQuanLy
+            // 
+            this.panelSubQuanLy.Controls.Add(this.btnTacGia);
+            this.panelSubQuanLy.Controls.Add(this.btnDocGia);
+            this.panelSubQuanLy.Controls.Add(this.btnThuThu);
+            this.panelSubQuanLy.Controls.Add(this.btnLoaiSach);
+            this.panelSubQuanLy.Controls.Add(this.btnSach);
+            this.panelSubQuanLy.Controls.Add(this.panel9);
+            this.panelSubQuanLy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubQuanLy.Location = new System.Drawing.Point(7, 92);
+            this.panelSubQuanLy.Name = "panelSubQuanLy";
+            this.panelSubQuanLy.Size = new System.Drawing.Size(196, 235);
+            this.panelSubQuanLy.TabIndex = 7;
+            // 
+            // btnSach
+            // 
+            this.btnSach.BorderRadius = 8;
+            this.btnSach.CheckedState.Parent = this.btnSach;
+            this.btnSach.CustomImages.Parent = this.btnSach;
+            this.btnSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSach.ForeColor = System.Drawing.Color.White;
+            this.btnSach.HoverState.Parent = this.btnSach;
+            this.btnSach.Location = new System.Drawing.Point(0, 1);
+            this.btnSach.Name = "btnSach";
+            this.btnSach.ShadowDecoration.Parent = this.btnSach;
+            this.btnSach.Size = new System.Drawing.Size(196, 45);
+            this.btnSach.TabIndex = 8;
+            this.btnSach.Text = "Sách";
+            this.btnSach.Click += new System.EventHandler(this.btnSach_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(196, 1);
+            this.panel9.TabIndex = 0;
+            // 
+            // panelForm
+            // 
+            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelForm.Location = new System.Drawing.Point(210, 100);
+            this.panelForm.Name = "panelForm";
+            this.panelForm.Size = new System.Drawing.Size(972, 653);
+            this.panelForm.TabIndex = 5;
             // 
             // btnStatus7
             // 
@@ -304,16 +597,6 @@
             this.btnStatus5.ShadowDecoration.Parent = this.btnStatus5;
             this.btnStatus5.Size = new System.Drawing.Size(50, 50);
             this.btnStatus5.TabIndex = 7;
-            // 
-            // lbTillerBar
-            // 
-            this.lbTillerBar.AutoSize = true;
-            this.lbTillerBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.lbTillerBar.Location = new System.Drawing.Point(65, 57);
-            this.lbTillerBar.Name = "lbTillerBar";
-            this.lbTillerBar.Size = new System.Drawing.Size(45, 17);
-            this.lbTillerBar.TabIndex = 6;
-            this.lbTillerBar.Text = "Home";
             // 
             // btnStatus3
             // 
@@ -427,75 +710,6 @@
             this.btnExit.TabIndex = 0;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnLoaiSach
-            // 
-            this.btnLoaiSach.BorderRadius = 8;
-            this.btnLoaiSach.CheckedState.Parent = this.btnLoaiSach;
-            this.btnLoaiSach.CustomImages.Parent = this.btnLoaiSach;
-            this.btnLoaiSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLoaiSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnLoaiSach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLoaiSach.ForeColor = System.Drawing.Color.White;
-            this.btnLoaiSach.HoverState.Parent = this.btnLoaiSach;
-            this.btnLoaiSach.Location = new System.Drawing.Point(0, 46);
-            this.btnLoaiSach.Name = "btnLoaiSach";
-            this.btnLoaiSach.ShadowDecoration.Parent = this.btnLoaiSach;
-            this.btnLoaiSach.Size = new System.Drawing.Size(196, 45);
-            this.btnLoaiSach.TabIndex = 9;
-            this.btnLoaiSach.Text = "Loại Sách";
-            this.btnLoaiSach.Click += new System.EventHandler(this.btnLoaiSach_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panelIcon);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 753);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.panelMenu);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 100);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(210, 653);
-            this.panel6.TabIndex = 1;
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.panelMenu.Controls.Add(this.btnSout);
-            this.panelMenu.Controls.Add(this.panel13);
-            this.panelMenu.Controls.Add(this.btnTroGiup);
-            this.panelMenu.Controls.Add(this.panel17);
-            this.panelMenu.Controls.Add(this.btnThongKe);
-            this.panelMenu.Controls.Add(this.panel16);
-            this.panelMenu.Controls.Add(this.panelSubMuonTra);
-            this.panelMenu.Controls.Add(this.panel14);
-            this.panelMenu.Controls.Add(this.btnMuonTra);
-            this.panelMenu.Controls.Add(this.panel12);
-            this.panelMenu.Controls.Add(this.btnSignOut);
-            this.panelMenu.Controls.Add(this.panelSubTimKiem);
-            this.panelMenu.Controls.Add(this.panel11);
-            this.panelMenu.Controls.Add(this.btnTimKiem);
-            this.panelMenu.Controls.Add(this.panel10);
-            this.panelMenu.Controls.Add(this.panelSubQuanLy);
-            this.panelMenu.Controls.Add(this.btnQuanLy);
-            this.panelMenu.Controls.Add(this.panel8);
-            this.panelMenu.Controls.Add(this.btnTaiKhoan);
-            this.panelMenu.Controls.Add(this.panel5);
-            this.panelMenu.Controls.Add(this.panel3);
-            this.panelMenu.Controls.Add(this.panel2);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMenu.Location = new System.Drawing.Point(0, 1);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(210, 652);
-            this.panelMenu.TabIndex = 1;
-            // 
             // btnSout
             // 
             this.btnSout.CheckedState.Parent = this.btnSout;
@@ -514,15 +728,6 @@
             this.btnSout.Size = new System.Drawing.Size(50, 50);
             this.btnSout.TabIndex = 27;
             this.btnSout.Click += new System.EventHandler(this.btnSignOut_Click);
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(7, 713);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(196, 1);
-            this.panel13.TabIndex = 26;
             // 
             // btnTroGiup
             // 
@@ -546,15 +751,6 @@
             this.btnTroGiup.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTroGiup.Click += new System.EventHandler(this.btnTroGiup_Click);
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(7, 667);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(196, 1);
-            this.panel17.TabIndex = 24;
-            // 
             // btnThongKe
             // 
             this.btnThongKe.BorderRadius = 8;
@@ -576,79 +772,6 @@
             this.btnThongKe.Text = "Thống Kê";
             this.btnThongKe.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(7, 621);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(196, 1);
-            this.panel16.TabIndex = 22;
-            // 
-            // panelSubMuonTra
-            // 
-            this.panelSubMuonTra.Controls.Add(this.btnTraSach);
-            this.panelSubMuonTra.Controls.Add(this.btnMuonSach);
-            this.panelSubMuonTra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMuonTra.Location = new System.Drawing.Point(7, 521);
-            this.panelSubMuonTra.Name = "panelSubMuonTra";
-            this.panelSubMuonTra.Size = new System.Drawing.Size(196, 100);
-            this.panelSubMuonTra.TabIndex = 21;
-            // 
-            // btnTraSach
-            // 
-            this.btnTraSach.BorderRadius = 8;
-            this.btnTraSach.CheckedState.Parent = this.btnTraSach;
-            this.btnTraSach.CustomImages.Parent = this.btnTraSach;
-            this.btnTraSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTraSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnTraSach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTraSach.ForeColor = System.Drawing.Color.White;
-            this.btnTraSach.HoverState.Parent = this.btnTraSach;
-            this.btnTraSach.Location = new System.Drawing.Point(0, 45);
-            this.btnTraSach.Name = "btnTraSach";
-            this.btnTraSach.ShadowDecoration.Parent = this.btnTraSach;
-            this.btnTraSach.Size = new System.Drawing.Size(196, 45);
-            this.btnTraSach.TabIndex = 12;
-            this.btnTraSach.Text = "Trả Sách";
-            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
-            // 
-            // btnMuonSach
-            // 
-            this.btnMuonSach.BorderRadius = 8;
-            this.btnMuonSach.CheckedState.Parent = this.btnMuonSach;
-            this.btnMuonSach.CustomImages.Parent = this.btnMuonSach;
-            this.btnMuonSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMuonSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnMuonSach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMuonSach.ForeColor = System.Drawing.Color.White;
-            this.btnMuonSach.HoverState.Parent = this.btnMuonSach;
-            this.btnMuonSach.Location = new System.Drawing.Point(0, 0);
-            this.btnMuonSach.Name = "btnMuonSach";
-            this.btnMuonSach.ShadowDecoration.Parent = this.btnMuonSach;
-            this.btnMuonSach.Size = new System.Drawing.Size(196, 45);
-            this.btnMuonSach.TabIndex = 11;
-            this.btnMuonSach.Text = "Mượn Sách";
-            this.btnMuonSach.Click += new System.EventHandler(this.btnMuonSach_Click);
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel14.Controls.Add(this.panel18);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel14.Location = new System.Drawing.Point(7, 520);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(196, 1);
-            this.panel14.TabIndex = 16;
-            // 
-            // panel18
-            // 
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(196, 100);
-            this.panel18.TabIndex = 22;
             // 
             // btnMuonTra
             // 
@@ -672,87 +795,6 @@
             this.btnMuonTra.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMuonTra.Click += new System.EventHandler(this.btnMuonTra_Click);
             // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(7, 474);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(196, 1);
-            this.panel12.TabIndex = 13;
-            // 
-            // btnSignOut
-            // 
-            this.btnSignOut.CheckedState.Parent = this.btnSignOut;
-            this.btnSignOut.CustomImages.Parent = this.btnSignOut;
-            this.btnSignOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnSignOut.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnSignOut.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnSignOut.HoverState.Parent = this.btnSignOut;
-            this.btnSignOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSignOut.Location = new System.Drawing.Point(15, 590);
-            this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnSignOut.ShadowDecoration.Parent = this.btnSignOut;
-            this.btnSignOut.Size = new System.Drawing.Size(50, 50);
-            this.btnSignOut.TabIndex = 12;
-            // 
-            // panelSubTimKiem
-            // 
-            this.panelSubTimKiem.Controls.Add(this.btnTKDocGia);
-            this.panelSubTimKiem.Controls.Add(this.btnTKSach);
-            this.panelSubTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubTimKiem.Location = new System.Drawing.Point(7, 374);
-            this.panelSubTimKiem.Name = "panelSubTimKiem";
-            this.panelSubTimKiem.Size = new System.Drawing.Size(196, 100);
-            this.panelSubTimKiem.TabIndex = 11;
-            // 
-            // btnTKDocGia
-            // 
-            this.btnTKDocGia.BorderRadius = 8;
-            this.btnTKDocGia.CheckedState.Parent = this.btnTKDocGia;
-            this.btnTKDocGia.CustomImages.Parent = this.btnTKDocGia;
-            this.btnTKDocGia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTKDocGia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnTKDocGia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTKDocGia.ForeColor = System.Drawing.Color.White;
-            this.btnTKDocGia.HoverState.Parent = this.btnTKDocGia;
-            this.btnTKDocGia.Location = new System.Drawing.Point(0, 45);
-            this.btnTKDocGia.Name = "btnTKDocGia";
-            this.btnTKDocGia.ShadowDecoration.Parent = this.btnTKDocGia;
-            this.btnTKDocGia.Size = new System.Drawing.Size(196, 45);
-            this.btnTKDocGia.TabIndex = 12;
-            this.btnTKDocGia.Text = "Tìm Kiếm Độc Giả";
-            this.btnTKDocGia.Click += new System.EventHandler(this.btnTKDocGia_Click);
-            // 
-            // btnTKSach
-            // 
-            this.btnTKSach.BorderRadius = 8;
-            this.btnTKSach.CheckedState.Parent = this.btnTKSach;
-            this.btnTKSach.CustomImages.Parent = this.btnTKSach;
-            this.btnTKSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTKSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnTKSach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTKSach.ForeColor = System.Drawing.Color.White;
-            this.btnTKSach.HoverState.Parent = this.btnTKSach;
-            this.btnTKSach.Location = new System.Drawing.Point(0, 0);
-            this.btnTKSach.Name = "btnTKSach";
-            this.btnTKSach.ShadowDecoration.Parent = this.btnTKSach;
-            this.btnTKSach.Size = new System.Drawing.Size(196, 45);
-            this.btnTKSach.TabIndex = 11;
-            this.btnTKSach.Text = "Tìm Kiếm Sách";
-            this.btnTKSach.Click += new System.EventHandler(this.btnTKSach_Click);
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(7, 373);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(196, 1);
-            this.panel11.TabIndex = 10;
-            // 
             // btnTimKiem
             // 
             this.btnTimKiem.BorderRadius = 8;
@@ -774,56 +816,6 @@
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(7, 327);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(196, 1);
-            this.panel10.TabIndex = 8;
-            // 
-            // panelSubQuanLy
-            // 
-            this.panelSubQuanLy.Controls.Add(this.btnTacGia);
-            this.panelSubQuanLy.Controls.Add(this.btnDocGia);
-            this.panelSubQuanLy.Controls.Add(this.btnThuThu);
-            this.panelSubQuanLy.Controls.Add(this.btnLoaiSach);
-            this.panelSubQuanLy.Controls.Add(this.btnSach);
-            this.panelSubQuanLy.Controls.Add(this.panel9);
-            this.panelSubQuanLy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubQuanLy.Location = new System.Drawing.Point(7, 92);
-            this.panelSubQuanLy.Name = "panelSubQuanLy";
-            this.panelSubQuanLy.Size = new System.Drawing.Size(196, 235);
-            this.panelSubQuanLy.TabIndex = 7;
-            // 
-            // btnSach
-            // 
-            this.btnSach.BorderRadius = 8;
-            this.btnSach.CheckedState.Parent = this.btnSach;
-            this.btnSach.CustomImages.Parent = this.btnSach;
-            this.btnSach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnSach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSach.ForeColor = System.Drawing.Color.White;
-            this.btnSach.HoverState.Parent = this.btnSach;
-            this.btnSach.Location = new System.Drawing.Point(0, 1);
-            this.btnSach.Name = "btnSach";
-            this.btnSach.ShadowDecoration.Parent = this.btnSach;
-            this.btnSach.Size = new System.Drawing.Size(196, 45);
-            this.btnSach.TabIndex = 8;
-            this.btnSach.Text = "Sách";
-            this.btnSach.Click += new System.EventHandler(this.btnSach_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(196, 1);
-            this.panel9.TabIndex = 0;
             // 
             // btnQuanLy
             // 
@@ -848,35 +840,28 @@
             this.btnQuanLy.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
-            // panelForm
+            // btnHome
             // 
-            this.panelForm.Controls.Add(this.label1);
-            this.panelForm.Controls.Add(this.panel4);
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.panelForm.Location = new System.Drawing.Point(210, 100);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(972, 653);
-            this.panelForm.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(122, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(565, 49);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Phần Mềm Quản Lý Thư Viện";
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::WindowsFormsApp1.Properties.Resources.icons8_book_shelf_50;
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(210, 100);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Location = new System.Drawing.Point(210, 100);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(972, 1);
-            this.panel4.TabIndex = 0;
+            this.panel4.TabIndex = 6;
             // 
             // fQuanLy
             // 
@@ -884,6 +869,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panel1);
@@ -891,7 +877,6 @@
             this.Name = "fQuanLy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fQuanLy";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fQuanLy_Load);
             this.panelIcon.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);
@@ -903,8 +888,6 @@
             this.panel14.ResumeLayout(false);
             this.panelSubTimKiem.ResumeLayout(false);
             this.panelSubQuanLy.ResumeLayout(false);
-            this.panelForm.ResumeLayout(false);
-            this.panelForm.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -962,7 +945,6 @@
         private Guna.UI2.WinForms.Guna2Button btnStatus6;
         private Guna.UI2.WinForms.Guna2Button btnSout;
         private System.Windows.Forms.Panel panelForm;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
     }
 }

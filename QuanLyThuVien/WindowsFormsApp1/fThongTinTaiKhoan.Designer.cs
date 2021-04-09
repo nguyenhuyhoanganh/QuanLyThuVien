@@ -45,6 +45,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtpkNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -57,13 +59,14 @@
             // 
             this.panel1.Controls.Add(this.txbHoTen);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(6, 21);
+            this.panel1.Location = new System.Drawing.Point(482, 102);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(329, 46);
             this.panel1.TabIndex = 0;
             // 
             // txbHoTen
             // 
+            this.txbHoTen.BackColor = System.Drawing.SystemColors.Window;
             this.txbHoTen.Location = new System.Drawing.Point(79, 9);
             this.txbHoTen.Name = "txbHoTen";
             this.txbHoTen.ReadOnly = true;
@@ -74,7 +77,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 0;
@@ -82,6 +85,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.panel6);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnDoiMK);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel4);
@@ -90,32 +95,35 @@
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Location = new System.Drawing.Point(12, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(948, 525);
+            this.groupBox1.Size = new System.Drawing.Size(948, 639);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông Tin";
+            this.groupBox1.Text = "Thông Tin Tài Khoản";
             // 
             // btnDoiMK
             // 
-            this.btnDoiMK.Location = new System.Drawing.Point(108, 293);
+            this.btnDoiMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnDoiMK.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnDoiMK.Location = new System.Drawing.Point(592, 373);
             this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(119, 37);
+            this.btnDoiMK.Size = new System.Drawing.Size(130, 46);
             this.btnDoiMK.TabIndex = 5;
             this.btnDoiMK.Text = "Đổi Mật Khẩu";
-            this.btnDoiMK.UseVisualStyleBackColor = true;
+            this.btnDoiMK.UseVisualStyleBackColor = false;
             this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.txbSDT);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(6, 229);
+            this.panel5.Location = new System.Drawing.Point(482, 310);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(329, 46);
             this.panel5.TabIndex = 4;
             // 
             // txbSDT
             // 
+            this.txbSDT.BackColor = System.Drawing.SystemColors.Window;
             this.txbSDT.Location = new System.Drawing.Point(79, 9);
             this.txbSDT.Name = "txbSDT";
             this.txbSDT.ReadOnly = true;
@@ -136,13 +144,14 @@
             // 
             this.panel4.Controls.Add(this.txbDiaChi);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(6, 177);
+            this.panel4.Location = new System.Drawing.Point(482, 258);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(329, 46);
             this.panel4.TabIndex = 3;
             // 
             // txbDiaChi
             // 
+            this.txbDiaChi.BackColor = System.Drawing.SystemColors.Window;
             this.txbDiaChi.Location = new System.Drawing.Point(79, 9);
             this.txbDiaChi.Name = "txbDiaChi";
             this.txbDiaChi.ReadOnly = true;
@@ -163,13 +172,14 @@
             // 
             this.panel3.Controls.Add(this.txbGioiTinh);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(6, 125);
+            this.panel3.Location = new System.Drawing.Point(482, 206);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(329, 46);
             this.panel3.TabIndex = 2;
             // 
             // txbGioiTinh
             // 
+            this.txbGioiTinh.BackColor = System.Drawing.SystemColors.Window;
             this.txbGioiTinh.Location = new System.Drawing.Point(79, 9);
             this.txbGioiTinh.Name = "txbGioiTinh";
             this.txbGioiTinh.ReadOnly = true;
@@ -190,7 +200,7 @@
             // 
             this.panel2.Controls.Add(this.dtpkNgaySinh);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(6, 73);
+            this.panel2.Location = new System.Drawing.Point(482, 154);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(329, 46);
             this.panel2.TabIndex = 1;
@@ -213,6 +223,23 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Ngày Sinh:";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(127, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 17);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Ảnh Đại Diện";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.Window;
+            this.panel6.Location = new System.Drawing.Point(130, 97);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(233, 313);
+            this.panel6.TabIndex = 7;
+            // 
             // fThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,9 +250,11 @@
             this.Name = "fThongTinTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông Tin Tài Khoản";
+            this.Load += new System.EventHandler(this.fThongTinTaiKhoan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -257,5 +286,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpkNgaySinh;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label6;
     }
 }

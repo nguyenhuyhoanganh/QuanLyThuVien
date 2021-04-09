@@ -120,12 +120,14 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(175, 201);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Location = new System.Drawing.Point(175, 192);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 31);
+            this.button1.Size = new System.Drawing.Size(115, 40);
             this.button1.TabIndex = 3;
             this.button1.Text = "Xác Nhận";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // fDoiMK

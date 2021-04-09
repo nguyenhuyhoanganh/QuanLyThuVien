@@ -12,13 +12,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class fDangNhap : Form
+    public partial class fDangNhapR : Form
     {
-        public fDangNhap()
+        public fDangNhapR()
         {
             InitializeComponent();
         }
-        
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -69,8 +68,8 @@ namespace WindowsFormsApp1
 
                 f.data = dt;
                 f.ShowDialog();
-                try { this.Show(); } 
-                catch { }
+                try { this.Show(); }
+                catch { this.Close(); }
             }
             else
             {
@@ -97,13 +96,6 @@ namespace WindowsFormsApp1
             if (txbPassword.Text == "Password")
                 txbPassword.Clear();
             txbPassword.UseSystemPasswordChar = true;
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            txbUsername.Text = "Username";
-            txbPassword.Text = "Password";
-            txbPassword.UseSystemPasswordChar = false;
         }
     }
 }
