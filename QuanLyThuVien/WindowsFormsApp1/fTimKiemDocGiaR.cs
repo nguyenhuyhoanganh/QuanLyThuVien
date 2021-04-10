@@ -11,29 +11,29 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class fTimKiemSachR : Form
+    public partial class fTimKiemDocGiaR : Form
     {
-        SqlConnection connection = new SqlConnection(SQLConStr.conStr);
-        public fTimKiemSachR()
+        SqlConnection conn = new SqlConnection(SQLConStr.conStr);
+        public fTimKiemDocGiaR()
         {
             InitializeComponent();
         }
-        private void btnTimMa_Click(object sender, EventArgs e)
+        private void btnTimKiem_Ma_Click(object sender, EventArgs e)
         {
             if (rbtTheoMa.Checked == true)
             {
                 try
                 {
-                    if (connection.State == ConnectionState.Closed)
-                        connection.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM Sach WHERE masach = @masach", connection);
-                    cmd.Parameters.AddWithValue("@masach", txbTimKiemSach.Text);
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM DocGia WHERE madocgia = @madocgia", conn);
+                    cmd.Parameters.AddWithValue("@madocgia", txbTimKiemDG.Text);
                     SqlDataReader read = cmd.ExecuteReader();
                     DataTable table = new DataTable();
                     table.Load(read);
-                    TTSach.DataSource = table;
-                    if (connection.State == ConnectionState.Open)
-                        connection.Close();
+                    TTDocGia.DataSource = table;
+                    if (conn.State == ConnectionState.Open)
+                        conn.Close();
                 }
                 catch (Exception e1)
                 {
@@ -44,15 +44,15 @@ namespace WindowsFormsApp1
             {
                 try
                 {
-                    if (connection.State == ConnectionState.Closed)
-                        connection.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM Sach WHERE tensach LIKE N'%" + txbTimKiemSach.Text + "%'", connection);
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM DocGia WHERE hoten LIKE N'%" + txbTimKiemDG.Text + "%'", conn);
                     SqlDataReader read = cmd.ExecuteReader();
                     DataTable table = new DataTable();
                     table.Load(read);
-                    TTSach.DataSource = table;
-                    if (connection.State == ConnectionState.Open)
-                        connection.Close();
+                    TTDocGia.DataSource = table;
+                    if (conn.State == ConnectionState.Open)
+                        conn.Close();
                 }
                 catch (Exception e1)
                 {
@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void fTimKiemSachR_Load(object sender, EventArgs e)
+        private void fTimKiemDocGiaR_Load(object sender, EventArgs e)
         {
             rbtTheoMa.Checked = true;
         }

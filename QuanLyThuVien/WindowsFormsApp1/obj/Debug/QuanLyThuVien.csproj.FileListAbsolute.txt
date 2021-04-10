@@ -235,16 +235,9 @@ C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\Window
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fDoiMK.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fHelp.resources
-C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fLogin.resources
-C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fManager.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormDocGia.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormThuThu.resources
-C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form_report.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fQuanLy.resources
-C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMuonTraSach.resources
-C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemDocGia.resources
-C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemSach.resources
-C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fSach.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTacGia.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTheLoai.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fThongTinTaiKhoan.resources
@@ -256,3 +249,8 @@ C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\Window
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fSachR.resources
 C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fDangNhapR.resources
+C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTimKiemDocGiaR.resources
+C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTimKiemSachR.resources
+C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fMuonSach.resources
+C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTraSach.resources
+C:\Users\huyho\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fThongKe.resources

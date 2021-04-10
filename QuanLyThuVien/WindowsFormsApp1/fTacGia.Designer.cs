@@ -30,6 +30,10 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -39,10 +43,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -52,6 +52,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 291);
@@ -81,6 +82,54 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Tác Giả";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button5.ForeColor = System.Drawing.SystemColors.Window;
+            this.button5.Location = new System.Drawing.Point(664, 157);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(97, 45);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "Xóa";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button6.ForeColor = System.Drawing.SystemColors.Window;
+            this.button6.Location = new System.Drawing.Point(664, 217);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(97, 45);
+            this.button6.TabIndex = 22;
+            this.button6.Text = "Sửa";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button7.ForeColor = System.Drawing.SystemColors.Window;
+            this.button7.Location = new System.Drawing.Point(664, 97);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(97, 45);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "Thêm";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button8.ForeColor = System.Drawing.SystemColors.Window;
+            this.button8.Location = new System.Drawing.Point(664, 37);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(97, 45);
+            this.button8.TabIndex = 20;
+            this.button8.Text = "Xem";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -163,54 +212,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(151, 22);
             this.textBox2.TabIndex = 0;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.button5.ForeColor = System.Drawing.SystemColors.Window;
-            this.button5.Location = new System.Drawing.Point(664, 157);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(97, 45);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "Xóa";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.button6.ForeColor = System.Drawing.SystemColors.Window;
-            this.button6.Location = new System.Drawing.Point(664, 217);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(97, 45);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "Sửa";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.button7.ForeColor = System.Drawing.SystemColors.Window;
-            this.button7.Location = new System.Drawing.Point(664, 97);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(97, 45);
-            this.button7.TabIndex = 21;
-            this.button7.Text = "Thêm";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.button8.ForeColor = System.Drawing.SystemColors.Window;
-            this.button8.Location = new System.Drawing.Point(664, 37);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(97, 45);
-            this.button8.TabIndex = 20;
-            this.button8.Text = "Xem";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button1_Click);
             // 
             // fTacGia
             // 

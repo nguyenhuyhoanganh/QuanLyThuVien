@@ -335,7 +335,7 @@ namespace WindowsFormsApp1
                 showStatus(btnStatus6);
                 ActivateButton(sender);
                 hideSubMenu();
-                //openForm(new fThongTinTaiKhoan());
+                openForm(new fThongKe());
             }
             else
             {
@@ -360,7 +360,7 @@ namespace WindowsFormsApp1
                 showStatus(btnStatus7);
                 ActivateButton(sender);
                 hideSubMenu();
-                //openForm(new fThongTinTaiKhoan());
+                openForm(new fHelp());
             }
             else
             {
@@ -404,25 +404,25 @@ namespace WindowsFormsApp1
         private void btnTKSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnTKSach);
-            openForm(new frmTimKiemSach());
+            openForm(new fTimKiemSachR());
         }
 
         private void btnTKDocGia_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnTKDocGia);
-            openForm(new frmTimKiemDocGia());
+            openForm(new fTimKiemDocGiaR());
         }
 
         private void btnMuonSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnMuonSach);
-            openForm(new FrmMuonTraSach());
+            openForm(new fMuonSach());
         }
 
         private void btnTraSach_Click(object sender, EventArgs e)
         {
             ActivateSubButton(btnTraSach);
-            openForm(new FrmMuonTraSach());
+            openForm(new fTraSach());
         }
 
         private void fQuanLy_Load(object sender, EventArgs e)

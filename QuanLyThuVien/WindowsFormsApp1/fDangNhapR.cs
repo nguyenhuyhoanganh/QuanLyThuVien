@@ -86,14 +86,14 @@ namespace WindowsFormsApp1
         }
         private void txbUsername_Click(object sender, EventArgs e)
         {
-            if (txbUsername.Text == "Username")
+            if (txbUsername.Text == "UserName")
                 txbUsername.Clear();
 
         }
 
         private void txbPassword_Click(object sender, EventArgs e)
         {
-            if (txbPassword.Text == "Password")
+            if (txbPassword.Text == "PassWord")
                 txbPassword.Clear();
             txbPassword.UseSystemPasswordChar = true;
         }

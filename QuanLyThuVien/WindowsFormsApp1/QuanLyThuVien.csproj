@@ -100,17 +100,11 @@
     <Compile Include="fHelp.Designer.cs">
       <DependentUpon>fHelp.cs</DependentUpon>
     </Compile>
-    <Compile Include="fManager.cs">
+    <Compile Include="fMuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fManager.Designer.cs">
-      <DependentUpon>fManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fLogin.Designer.cs">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <Compile Include="fMuonSach.Designer.cs">
+      <DependentUpon>fMuonSach.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDocGia.cs">
       <SubType>Form</SubType>
@@ -124,41 +118,11 @@
     <Compile Include="FormThuThu.Designer.cs">
       <DependentUpon>FormThuThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_report.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_report.Designer.cs">
-      <DependentUpon>Form_report.cs</DependentUpon>
-    </Compile>
     <Compile Include="fQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fQuanLy.Designer.cs">
       <DependentUpon>fQuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPhieuMuon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPhieuMuon.designer.cs">
-      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTimKiemDocGia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTimKiemDocGia.Designer.cs">
-      <DependentUpon>frmTimKiemDocGia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTimKiemSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTimKiemSach.Designer.cs">
-      <DependentUpon>frmTimKiemSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fSach.Designer.cs">
-      <DependentUpon>fSach.cs</DependentUpon>
     </Compile>
     <Compile Include="fSachR.cs">
       <SubType>Form</SubType>
@@ -178,11 +142,35 @@
     <Compile Include="fTheLoai.Designer.cs">
       <DependentUpon>fTheLoai.cs</DependentUpon>
     </Compile>
+    <Compile Include="fThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThongKe.Designer.cs">
+      <DependentUpon>fThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="fThongTinTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fThongTinTaiKhoan.Designer.cs">
       <DependentUpon>fThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTimKiemDocGiaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTimKiemDocGiaR.Designer.cs">
+      <DependentUpon>fTimKiemDocGiaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTimKiemSachR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTimKiemSachR.Designer.cs">
+      <DependentUpon>fTimKiemSachR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTraSach.Designer.cs">
+      <DependentUpon>fTraSach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,11 +184,8 @@
     <EmbeddedResource Include="fHelp.resx">
       <DependentUpon>fHelp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
-      <DependentUpon>fLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fManager.resx">
-      <DependentUpon>fManager.cs</DependentUpon>
+    <EmbeddedResource Include="fMuonSach.resx">
+      <DependentUpon>fMuonSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDocGia.resx">
       <DependentUpon>FormDocGia.cs</DependentUpon>
@@ -208,23 +193,8 @@
     <EmbeddedResource Include="FormThuThu.resx">
       <DependentUpon>FormThuThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_report.resx">
-      <DependentUpon>Form_report.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fQuanLy.resx">
       <DependentUpon>fQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPhieuMuon.resx">
-      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTimKiemDocGia.resx">
-      <DependentUpon>frmTimKiemDocGia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTimKiemSach.resx">
-      <DependentUpon>frmTimKiemSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fSach.resx">
-      <DependentUpon>fSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSachR.resx">
       <DependentUpon>fSachR.cs</DependentUpon>
@@ -235,8 +205,20 @@
     <EmbeddedResource Include="fTheLoai.resx">
       <DependentUpon>fTheLoai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fThongKe.resx">
+      <DependentUpon>fThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fThongTinTaiKhoan.resx">
       <DependentUpon>fThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTimKiemDocGiaR.resx">
+      <DependentUpon>fTimKiemDocGiaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTimKiemSachR.resx">
+      <DependentUpon>fTimKiemSachR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTraSach.resx">
+      <DependentUpon>fTraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

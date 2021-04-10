@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-//using ClosedXML;
-//using ClosedXML.Excel;
+using ClosedXML;
+using ClosedXML.Excel;
+
 namespace WindowsFormsApp1
 {
-    public partial class Form_report : Form
+    public partial class fThongKe : Form
     {
-        public Form_report()
+        public fThongKe()
         {
             InitializeComponent();
         }
@@ -104,24 +105,24 @@ namespace WindowsFormsApp1
 
         private void button_excel_Click(object sender, EventArgs e)
         {
-           /* using (SaveFileDialog save = new SaveFileDialog() {Filter="SQLEXPORT|*.xlsx" })
-            {
-                if(save.ShowDialog()==DialogResult.OK)
-                {
-                    try
-                    {
-                        using(XLWorkbook xLWorkbook = new XLWorkbook())
-                        {
-                            xLWorkbook.Worksheets.Add(dataTable, "SQLEXPORT");
-                            xLWorkbook.SaveAs(save.FileName);
-                        }    
-                    }
-                    catch(Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }    
-            }*/    
+            /* using (SaveFileDialog save = new SaveFileDialog() {Filter="SQLEXPORT|*.xlsx" })
+             {
+                 if(save.ShowDialog()==DialogResult.OK)
+                 {
+                     try
+                     {
+                         using(XLWorkbook xLWorkbook = new XLWorkbook())
+                         {
+                             xLWorkbook.Worksheets.Add(dataTable, "SQLEXPORT");
+                             xLWorkbook.SaveAs(save.FileName);
+                         }    
+                     }
+                     catch(Exception ex)
+                     {
+                         MessageBox.Show(ex.Message, "Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     }
+                 }    
+             }*/
         }
     }
 }

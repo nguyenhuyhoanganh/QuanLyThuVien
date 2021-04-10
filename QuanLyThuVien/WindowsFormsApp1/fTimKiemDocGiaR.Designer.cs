@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class fTimKiemSachR
+    partial class fTimKiemDocGiaR
     {
         /// <summary>
         /// Required designer variable.
@@ -31,15 +31,15 @@ namespace WindowsFormsApp1
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.TTSach = new System.Windows.Forms.DataGridView();
+            this.TTDocGia = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txbTimKiemSach = new System.Windows.Forms.TextBox();
+            this.txbTimKiemDG = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.rbtTheoTen = new System.Windows.Forms.RadioButton();
             this.rbtTheoMa = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTSach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TTDocGia)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,40 +47,40 @@ namespace WindowsFormsApp1
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.TTSach);
+            this.groupBox1.Controls.Add(this.TTDocGia);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(948, 629);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tìm Kiếm Sách";
+            this.groupBox1.Text = "Tìm Kiếm Độc Giả";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 268);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(128, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Thông Tin Sách";
+            this.label1.Text = "Thông Tin Độc Giả";
             // 
-            // TTSach
+            // TTDocGia
             // 
-            this.TTSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.TTSach.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.TTSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TTSach.Location = new System.Drawing.Point(9, 291);
-            this.TTSach.Name = "TTSach";
-            this.TTSach.RowHeadersWidth = 51;
-            this.TTSach.RowTemplate.Height = 24;
-            this.TTSach.Size = new System.Drawing.Size(930, 329);
-            this.TTSach.TabIndex = 3;
+            this.TTDocGia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TTDocGia.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.TTDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TTDocGia.Location = new System.Drawing.Point(9, 291);
+            this.TTDocGia.Name = "TTDocGia";
+            this.TTDocGia.RowHeadersWidth = 51;
+            this.TTDocGia.RowTemplate.Height = 24;
+            this.TTDocGia.Size = new System.Drawing.Size(930, 329);
+            this.TTDocGia.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnTimKiem);
-            this.panel1.Controls.Add(this.txbTimKiemSach);
+            this.panel1.Controls.Add(this.txbTimKiemDG);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(277, 48);
             this.panel1.Name = "panel1";
@@ -97,14 +97,14 @@ namespace WindowsFormsApp1
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimMa_Click);
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Ma_Click);
             // 
-            // txbTimKiemSach
+            // txbTimKiemDG
             // 
-            this.txbTimKiemSach.Location = new System.Drawing.Point(116, 32);
-            this.txbTimKiemSach.Name = "txbTimKiemSach";
-            this.txbTimKiemSach.Size = new System.Drawing.Size(164, 22);
-            this.txbTimKiemSach.TabIndex = 1;
+            this.txbTimKiemDG.Location = new System.Drawing.Point(116, 32);
+            this.txbTimKiemDG.Name = "txbTimKiemDG";
+            this.txbTimKiemDG.Size = new System.Drawing.Size(164, 22);
+            this.txbTimKiemDG.TabIndex = 1;
             // 
             // panel2
             // 
@@ -137,18 +137,18 @@ namespace WindowsFormsApp1
             this.rbtTheoMa.Text = "Theo Mã";
             this.rbtTheoMa.UseVisualStyleBackColor = true;
             // 
-            // fTimKiemSachR
+            // fTimKiemDocGiaR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 653);
             this.Controls.Add(this.groupBox1);
-            this.Name = "fTimKiemSachR";
-            this.Text = "fTimKiemSachR";
-            this.Load += new System.EventHandler(this.fTimKiemSachR_Load);
+            this.Name = "fTimKiemDocGiaR";
+            this.Text = "fTimKiemDocGiaR";
+            this.Load += new System.EventHandler(this.fTimKiemDocGiaR_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTSach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TTDocGia)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -160,13 +160,13 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView TTDocGia;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.TextBox txbTimKiemSach;
+        private System.Windows.Forms.TextBox txbTimKiemDG;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton rbtTheoTen;
         private System.Windows.Forms.RadioButton rbtTheoMa;
-        private System.Windows.Forms.DataGridView TTSach;
-        private System.Windows.Forms.Label label1;
     }
 }
