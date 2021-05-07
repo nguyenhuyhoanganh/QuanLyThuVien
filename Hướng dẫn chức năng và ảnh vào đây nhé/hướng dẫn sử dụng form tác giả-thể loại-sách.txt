@@ -1,0 +1,3 @@
+Nút Thêm: Điền đầy đủ thông tin vào các ô text box rồi ấn Thêm
+Nút Sửa: Chọn một bản ghi trong datagridview thông tin sẽ hiện lên các textbox, chọn thông tin cần sửa rồi ấn Sửa
+Nút Xóa: Chọn một bản ghi trong datagridview rồi ấn nút Xóa

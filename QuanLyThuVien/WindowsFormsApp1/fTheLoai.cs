@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.DTO;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -16,109 +17,265 @@ namespace WindowsFormsApp1
         public fTheLoai()
         {
             InitializeComponent();
+            LoadInformation();
             
         }
-        void load()
+
+
+        private void ClearDL()
         {
-            dataGridView1.DataSource = DataProvider.Instance.ExecuteQuery("Select * from LoaiSach");
+            txtMaLoaiS.Text = "";
+            txtTenLoaiS.Text = "";
+            txtMoTa.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            load();
-        }
 
-        private void button4_Click(object sender, EventArgs e)
+        DataTable ExecuteQuery(string query, object[] parameter = null)
         {
-            int rez = 0;
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+
+            DataTable data = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
+
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                if (parameter != null)
+                {
+                    string[] temp = query.Split(' ');
+                    List<string> listPara = new List<string>();
+                    foreach (string item in temp)
+                    {
+                        if (item[0] == '@')
+                            listPara.Add(item);
+                    }
+                    for (int i = 0; i < parameter.Length; i++)
+                    {
+                        command.Parameters.AddWithValue(listPara[i], parameter[i]);
+                    }
+                }
                 try
                 {
-                    string que = "Insert into loaisach(maloaisach,tenloaisach,mota) values ('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "')";
-                    rez = DataProvider.Instance.ExecuteNonQuery(que);
-                    if (rez != 0)
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(data);
+                }
+                catch { }
+
+                connection.Close();
+            }
+            return data;
+        }
+        // trả về 1 data table  gọi trong phương thức xem, lấy dữ liệu qua câu truy vấn
+        int ExecuteNonQuery(string query, object[] parameter = null)
+        {
+            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+
+            int acceptedRows = 0;
+
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+
+                connection.Open();
+                try
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    if (parameter != null)
                     {
-                        MessageBox.Show("Thêm thành công");
-                        load();
+                        string[] temp = query.Split(' ');
+                        List<string> listPara = new List<string>();
+                        foreach (string item in temp)
+                        {
+                            if (item[0] == '@')
+                                listPara.Add(item);
+                        }
+                        for (int i = 0; i < parameter.Length; i++)
+                        {
+                            command.Parameters.AddWithValue(listPara[i], parameter[i]);
+                        }
+                    }
+                    //thực thi câu query chả về số dòng câu truy vấn thực hiện được
+                    acceptedRows = -1;
+
+                    acceptedRows = command.ExecuteNonQuery();
+                }
+                catch { MessageBox.Show("Lỗi Dữ Liệu"); }
+                connection.Close();
+            }
+
+            return acceptedRows;
+        }
+        // trả về kiểu int, gọi trong phương thức thêm và xoá, kiểu int là số dòng  thực thi thay dổi database
+
+
+
+
+        private void LoadInformation()
+        {
+            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionSTR);
+            string query = "select * from LoaiSach";
+            connection.Open();
+            SqlCommand command = new SqlCommand(query, connection);
+            DataTable data = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(data);
+            connection.Close();
+            dataGridTheloaiS.DataSource = data;
+
+
+
+        }
+        private void TLS_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = dataGridTheloaiS.CurrentRow.Index;
+            txtMaLoaiS.Text =dataGridTheloaiS.Rows[i].Cells[0].Value.ToString();
+            txtTenLoaiS.Text = dataGridTheloaiS.Rows[i].Cells[1].Value.ToString();
+            txtMoTa.Text = dataGridTheloaiS.Rows[i].Cells[2].Value.ToString();
+
+
+
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (txtMaLoaiS.Text != "")
+            {
+                if (txtTenLoaiS.Text != "")
+                {
+                    if (txtMoTa.Text != "")
+                    {
+
+
+                        string mls = txtMaLoaiS.Text;
+
+                        string tls =txtTenLoaiS.Text;
+                        string mota = txtMoTa.Text;
+
+                        string query = "Insert into LoaiSach values(  N'" + mls.ToString() + "',N'" + tls.ToString() + "',N'" + mota.ToString() + "' )";
+                        int i = -1;
+                        i = ExecuteNonQuery(query);
+                        if (i != -1)
+                        {
+                            MessageBox.Show("Đã Thêm Thành Công!");
+
+
+                            LoadInformation();
+                            ClearDL();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thêm Không Thành Công!");
+                        }
+
+
+
                     }
                     else
                     {
-                        MessageBox.Show("Thêm không thành công");
+                        MessageBox.Show("Bạn chưa nhập mô tả");
                     }
+
                 }
-                catch { }
+                else
                 {
-                    MessageBox.Show("Mã đã tồn tại");
+                    MessageBox.Show("Bạn chưa nhập tên loại sách");
                 }
             }
             else
             {
-                MessageBox.Show("Nhập đầy đủ thông tin!!");
+                MessageBox.Show("Bạn chưa nhập mã loại sách");
+
             }
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void btnSua_Click(object sender, EventArgs e)
         {
-            textBox2.DataBindings.Clear();
-            textBox2.DataBindings.Add("text", dataGridView1.DataSource, "maloaisach");
-            textBox1.DataBindings.Clear();
-            textBox1.DataBindings.Add("text", dataGridView1.DataSource, "tenloaisach");
-            textBox3.DataBindings.Clear();
-            textBox3.DataBindings.Add("text", dataGridView1.DataSource, "mota");
 
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            int rez = 0;
-            if (textBox1.Text == "")
+            if (txtMaLoaiS.Text != "")
             {
-                MessageBox.Show("Hãy chọn 1 trường thông tin trong bảng để sửa");
-            }
-            else
-            {
-                string que = "Update loaisach set tenloaisach='" + textBox1.Text + "', mota='" + textBox3.Text + "' where maloaisach='" + textBox2.Text + "'";
-                rez = DataProvider.Instance.ExecuteNonQuery(que);
-                if (rez > 0)
+                if (txtTenLoaiS.Text != "")
                 {
-                    MessageBox.Show("Sửa thành công");
-                    load();
-                }
-                else MessageBox.Show("Sửa không thành công!!");
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int rez = 0;
-            if (textBox2.Text == "")
-            {
-                MessageBox.Show("Chọn dữ liệu cần xóa");
-
-            }
-            else
-            {
-                try
-                {
-                    if (MessageBox.Show("Bạn có muốn xóa loại sách có mã " + textBox2.Text + "", "Cảnh báo xóa!!", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                    if (txtMoTa.Text != "")
                     {
-                        string queud = "Update Sach set maloaisach=NULL where maloaisach='" + textBox2.Text + "'";
-                        DataProvider.Instance.ExecuteNonQuery(queud);
-                        string que = "Delete loaisach where maloaisach='" + textBox2.Text + "'";
-                        rez = DataProvider.Instance.ExecuteNonQuery(que);
+
+
+                        string mls = txtMaLoaiS.Text;
+
+                        string tls = txtTenLoaiS.Text;
+                        string mota = txtMoTa.Text;
+
+                        string query = @"update  LoaiSach set maloaisach =  N'" + mls.ToString() + "',tenloaisach = N'" + tls.ToString() + "',mota= N'" + mota.ToString() + "'  where maloaisach=  N'" + mls.ToString() + "' ";
+                        int i = -1;
+                        i = ExecuteNonQuery(query);
+                        if (i != -1)
+                        {
+                            MessageBox.Show("Đã Sửa Thành Công!");
+
+
+                            LoadInformation();
+                            ClearDL();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sửa Không Thành Công!");
+                        }
+
+
+
                     }
-                    if (rez > 0)
+                    else
                     {
-                        MessageBox.Show("Xóa thành công");
-                        load();
+                        MessageBox.Show("Bạn chưa nhập mô tả");
                     }
-                    else MessageBox.Show("Xóa không thành công");
 
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.ToString());
+                    MessageBox.Show("Bạn chưa nhập tên loại sách");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa nhập mã loại sách");
+
+            }
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (txtMaLoaiS.Text != "")
+                {
+
+                    string mls = txtMaLoaiS.Text;
+
+                    string tls = txtTenLoaiS.Text;
+
+                    string mota = txtMoTa.Text;
+                    string query = @"exec XoaLoaiS @mls =  N'" + mls.ToString() + "'";
+                    int i = -1;
+                    i = ExecuteNonQuery(query);
+                    if (i != -1)
+                    {
+                        MessageBox.Show("Đã Xóa Thành Công!");
+
+
+                        LoadInformation();
+                        ClearDL();
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show(" Xóa Không Thành Công!");
                 }
             }
         }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.DTO;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -16,74 +17,367 @@ namespace WindowsFormsApp1
         public fSachR()
         {
             InitializeComponent();
+            LoadInformation();
         }
-        void load()
+        private void ClearDL()
         {
+            txtMaSach.Text = "";
+            txtMls.Text = "";
+            txtTacGia.Text = "";
+            txtNxb.Text = "";
+            txtTenSach.Text = "";
+            cbTinhTrang.Text = "";
+            datetimeNgayNhap.Text = "";
+        }
 
-        }
-        private void btnXemS_Click(object sender, EventArgs e)
-        {
-            dtgvSach.DataSource = DataProvider.Instance.ExecuteQuery("Select * from Sach");
-        }
 
-        private void dtgvSach_CellClick(object sender, DataGridViewCellEventArgs e)
+        DataTable ExecuteQuery(string query, object[] parameter = null)
         {
-            txbMaSach.DataBindings.Clear();
-            txbMaSach.DataBindings.Add("text", dtgvSach.DataSource, "masach");
-            txbMaLoaiSach_S.DataBindings.Clear();
-            txbMaLoaiSach_S.DataBindings.Add("text", dtgvSach.DataSource, "maloaisach");
-            txbMaTG_S.DataBindings.Clear();
-            txbMaTG_S.DataBindings.Add("text", dtgvSach.DataSource, "matg");
-            txbTenSach.DataBindings.Clear();
-            txbTenSach.DataBindings.Add("text", dtgvSach.DataSource, "tensach");
-            dtpkNgayNhapS.DataBindings.Clear();
-            dtpkNgayNhapS.DataBindings.Add("text", dtgvSach.DataSource, "ngaynhap");
-            if (dtgvSach.Rows[e.RowIndex].Cells[5].Value.ToString() == "True")
+            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+
+            DataTable data = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
-                cbTinhTrang.Text = "Đang Mượn";
-            }
-            else
-                cbTinhTrang.Text = "Chưa Mượn";
 
-        }
-        bool kiemTraEmpty()
-        {
-            if (txbMaLoaiSach_S.Text == "" && txbMaSach.Text == "" && txbMaTG_S.Text == "" && txbTenSach.Text == "") return false;
-            else return true;
-        }
-        private void btnThemS_Click(object sender, EventArgs e)
-        {
-            int rez = 0;
-            cbTinhTrang.Text = "Chưa Mượn";
-            if (kiemTraEmpty())
-            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                if (parameter != null)
+                {
+                    string[] temp = query.Split(' ');
+                    List<string> listPara = new List<string>();
+                    foreach (string item in temp)
+                    {
+                        if (item[0] == '@')
+                            listPara.Add(item);
+                    }
+                    for (int i = 0; i < parameter.Length; i++)
+                    {
+                        command.Parameters.AddWithValue(listPara[i], parameter[i]);
+                    }
+                }
                 try
                 {
-                    string tinhtrang = "";
-                    string ngaynhap = "";
-                    if (cbTinhTrang.Text == "Đang Mượn")
-                        tinhtrang = "1";
-                    else tinhtrang = "0";
-                    ngaynhap = dtpkNgayNhapS.Value.ToString("MM/dd/yyyy");
-                    string que = "Insert into sach(masach, maloaisach, matg, manxb, tensach, tinhtrang, ngaynhap) values('" + txbMaSach.Text + "','" + txbMaLoaiSach_S.Text + "','" + txbMaTG_S.Text + "','NXB01','" + txbTenSach.Text + "'," + tinhtrang + ", '" + ngaynhap + "')";
-                    rez = DataProvider.Instance.ExecuteNonQuery(que);
-                    if (rez > 0)
-                    {
-                        MessageBox.Show("Thêm thành công");
-                        btnXemS_Click(sender, e);
-                    }
-                    else MessageBox.Show("Thêm không thành công");
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(data);
                 }
                 catch { }
-                {
-                    MessageBox.Show("Hãy chỉnh sửa thông tin");
-                }
 
+                connection.Close();
+            }
+            return data;
+        }
+        // trả về 1 data table  gọi trong phương thức xem, lấy dữ liệu qua câu truy vấn
+        int ExecuteNonQuery(string query, object[] parameter = null)
+        {
+            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+
+            int acceptedRows = 0;
+
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+
+                connection.Open();
+                try
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    if (parameter != null)
+                    {
+                        string[] temp = query.Split(' ');
+                        List<string> listPara = new List<string>();
+                        foreach (string item in temp)
+                        {
+                            if (item[0] == '@')
+                                listPara.Add(item);
+                        }
+                        for (int i = 0; i < parameter.Length; i++)
+                        {
+                            command.Parameters.AddWithValue(listPara[i], parameter[i]);
+                        }
+                    }
+                    //thực thi câu query chả về số dòng câu truy vấn thực hiện được
+                    acceptedRows = -1;
+
+                    acceptedRows = command.ExecuteNonQuery();
+                }
+                catch { MessageBox.Show("Lỗi Dữ Liệu"); }
+                connection.Close();
+            }
+
+            return acceptedRows;
+        }
+        // trả về kiểu int, gọi trong phương thức thêm và xoá, kiểu int là số dòng  thực thi thay dổi database
+
+
+
+
+        private void LoadInformation()
+        {
+            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionSTR);
+            string query = "select * from Sach";
+            connection.Open();
+            SqlCommand command = new SqlCommand(query, connection);
+            DataTable data = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(data);
+            connection.Close();
+            DataGridSach.DataSource = data;
+
+
+
+        }
+       
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (txtMaSach.Text != "")
+            {
+                if (txtMls.Text != "")
+                {
+                    if (txtTacGia.Text != "")
+                    {
+                        if(txtNxb.Text!="")
+                        {
+                            
+                            if(txtTenSach.Text!="")
+                            {
+
+                                if(cbTinhTrang.Text!="")
+                                {
+                                    if(datetimeNgayNhap.Text!="")
+                                    {
+                                        string masach = txtMaSach.Text;
+                                        string mls = txtMls.Text;
+                                        string matg = txtTacGia.Text;
+                                        string manxb = txtNxb.Text;
+                                        string tensach = txtTenSach.Text;
+
+                                        bool tinhtrang;
+                                        if (cbTinhTrang.Text == "True")
+                                        {
+                                            tinhtrang = true;
+                                        }
+                                        else
+                                        {
+                                            tinhtrang = false;
+                                        }
+                                        DateTime ngaynhap = (DateTime)datetimeNgayNhap.Value;
+
+
+
+                                        string query = "Insert into Sach values(  N'" + masach.ToString() + "',N'" + mls.ToString() + "',N'" + matg.ToString() + "' ,N'" + manxb.ToString() + "',N'" + tensach.ToString() + "','" + tinhtrang.ToString() + "','" + ngaynhap.ToString() + "')";
+                                        int i = -1;
+                                        i = ExecuteNonQuery(query);
+                                        if (i != -1)
+                                        {
+                                            MessageBox.Show("Đã Thêm Thành Công!");
+
+
+                                            LoadInformation();
+                                            ClearDL();
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Thêm Không Thành Công!");
+                                        }
+                                    }   
+                                    else
+                                    {
+                                        MessageBox.Show("Bạn chưa nhập ngày nhập");
+                                    }    
+
+                                }    
+                                else
+                                {
+                                    MessageBox.Show("Bạn chưa nhập tình trạng");
+                                }    
+                            }
+                            else
+                            {
+                                MessageBox.Show("Bạn chưa nhập tên sách");
+                            }    
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bạn chưa nhập mã nxb");
+                        }    
+
+
+                        
+
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bạn chưa nhập mã tác giả");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Bạn chưa nhập mã loại sách");
+                }
             }
             else
             {
-                MessageBox.Show("Hãy Thêm Thông Tin!!!");
+                MessageBox.Show("Bạn chưa nhập mã sách");
+
             }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+            if (txtMaSach.Text != "")
+            {
+                if (txtMls.Text != "")
+                {
+                    if (txtTacGia.Text != "")
+                    {
+                        if (txtNxb.Text != "")
+                        {
+
+                            if (txtTenSach.Text != "")
+                            {
+
+                                if (cbTinhTrang.Text != "")
+                                {
+                                    if (datetimeNgayNhap.Text != "")
+                                    {
+                                        string masach = txtMaSach.Text;
+                                        string mls = txtMls.Text;
+                                        string matg = txtTacGia.Text;
+                                        string manxb = txtNxb.Text;
+                                        string tensach = txtTenSach.Text;
+                                        bool tinhtrang;
+                                        if (cbTinhTrang.Text == "True")
+                                        {
+                                            tinhtrang = true;
+                                        }
+                                        else
+                                        {
+                                            tinhtrang = false;
+                                        }
+                                        DateTime ngaynhap = datetimeNgayNhap.Value;
+
+
+
+                                        string query = "Update Sach set masach=  N'" + masach.ToString() + "',maloaisach=N'" + mls.ToString() + "',matg=N'" + matg.ToString() + "' ,manxb = N'" + manxb.ToString() + "',tensach=N'" + tensach.ToString() + "',tinhtrang = '" + tinhtrang.ToString() + "',ngaynhap='" + ngaynhap.ToString() + "' where masach=  N'" + masach.ToString() + "'";
+                                        int i = -1;
+                                        i = ExecuteNonQuery(query);
+                                        if (i != -1)
+                                        {
+                                            MessageBox.Show("Đã Sửa Thành Công!");
+
+
+                                            LoadInformation();
+                                            ClearDL();
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Sửa Không Thành Công!");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Bạn chưa nhập ngày nhập");
+                                    }
+
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Bạn chưa nhập tình trạng");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Bạn chưa nhập tên sách");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bạn chưa nhập mã nxb");
+                        }
+
+
+
+
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bạn chưa nhập mã tác giả");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Bạn chưa nhập mã loại sách");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa nhập mã sách");
+
+            }
+
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (txtMaSach.Text != "")
+                {
+                    string masach = txtMaSach.Text;
+                    string mls = txtMls.Text;
+                    string matg = txtTacGia.Text;
+                    string manxb = txtNxb.Text;
+                    string tensach = txtTenSach.Text;
+                    
+
+                    DateTime ngaynhap = datetimeNgayNhap.Value;
+
+
+                    string query = @"delete Sach where masach =  N'" + masach.ToString() + "'";
+                    int i = -1;
+                    i = ExecuteNonQuery(query);
+                    if (i != -1)
+                    {
+                        MessageBox.Show("Đã Xóa Thành Công!");
+
+
+                        LoadInformation();
+                        ClearDL();
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show(" Xóa Không Thành Công!");
+                }
+            }
+        }
+
+        private void Sach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = DataGridSach.CurrentRow.Index;
+            txtMaSach.Text = DataGridSach.Rows[i].Cells[0].Value.ToString();
+            txtMls.Text = DataGridSach.Rows[i].Cells[1].Value.ToString();
+            txtTacGia.Text = DataGridSach.Rows[i].Cells[2].Value.ToString();
+            txtNxb.Text = DataGridSach.Rows[i].Cells[3].Value.ToString();
+            txtTenSach.Text = DataGridSach.Rows[i].Cells[4].Value.ToString();
+            cbTinhTrang.Text = DataGridSach.Rows[i].Cells[5].Value.ToString();
+            datetimeNgayNhap.Text = DataGridSach.Rows[i].Cells[6].Value.ToString();
+
         }
     }
 }
