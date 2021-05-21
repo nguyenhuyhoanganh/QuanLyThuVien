@@ -51,10 +51,10 @@ namespace WindowsFormsApp1
             this.tensach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tinhtrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaynhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.Xóa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
             this.txtNxb = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridSach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(801, 93);
+            this.label7.Location = new System.Drawing.Point(752, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 17);
             this.label7.TabIndex = 6;
@@ -156,7 +156,7 @@ namespace WindowsFormsApp1
             // 
             this.txtTenSach.Location = new System.Drawing.Point(625, 91);
             this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(152, 22);
+            this.txtTenSach.Size = new System.Drawing.Size(100, 22);
             this.txtTenSach.TabIndex = 12;
             // 
             // cbTinhTrang
@@ -167,21 +167,22 @@ namespace WindowsFormsApp1
             "False"});
             this.cbTinhTrang.Location = new System.Drawing.Point(625, 145);
             this.cbTinhTrang.Name = "cbTinhTrang";
-            this.cbTinhTrang.Size = new System.Drawing.Size(152, 24);
+            this.cbTinhTrang.Size = new System.Drawing.Size(100, 24);
             this.cbTinhTrang.TabIndex = 13;
             // 
             // datetimeNgayNhap
             // 
             this.datetimeNgayNhap.CustomFormat = "dd/MM/yyyy";
             this.datetimeNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datetimeNgayNhap.Location = new System.Drawing.Point(888, 91);
+            this.datetimeNgayNhap.Location = new System.Drawing.Point(839, 91);
             this.datetimeNgayNhap.Name = "datetimeNgayNhap";
-            this.datetimeNgayNhap.Size = new System.Drawing.Size(163, 22);
+            this.datetimeNgayNhap.Size = new System.Drawing.Size(100, 22);
             this.datetimeNgayNhap.TabIndex = 14;
             // 
             // DataGridSach
             // 
             this.DataGridSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridSach.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DataGridSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.masach,
@@ -191,12 +192,11 @@ namespace WindowsFormsApp1
             this.tensach,
             this.tinhtrang,
             this.ngaynhap});
-            this.DataGridSach.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DataGridSach.Location = new System.Drawing.Point(0, 260);
+            this.DataGridSach.Location = new System.Drawing.Point(12, 260);
             this.DataGridSach.Name = "DataGridSach";
             this.DataGridSach.RowHeadersWidth = 51;
             this.DataGridSach.RowTemplate.Height = 24;
-            this.DataGridSach.Size = new System.Drawing.Size(1128, 393);
+            this.DataGridSach.Size = new System.Drawing.Size(948, 381);
             this.DataGridSach.TabIndex = 15;
             this.DataGridSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Sach_CellClick);
             // 
@@ -249,36 +249,6 @@ namespace WindowsFormsApp1
             this.ngaynhap.MinimumWidth = 6;
             this.ngaynhap.Name = "ngaynhap";
             // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(389, 205);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 16;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // Xóa
-            // 
-            this.Xóa.Location = new System.Drawing.Point(702, 205);
-            this.Xóa.Name = "Xóa";
-            this.Xóa.Size = new System.Drawing.Size(75, 23);
-            this.Xóa.TabIndex = 17;
-            this.Xóa.Text = "Xóa";
-            this.Xóa.UseVisualStyleBackColor = true;
-            this.Xóa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(551, 205);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 18;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
             // txtNxb
             // 
             this.txtNxb.Location = new System.Drawing.Point(389, 145);
@@ -286,15 +256,51 @@ namespace WindowsFormsApp1
             this.txtNxb.Size = new System.Drawing.Size(100, 22);
             this.txtNxb.TabIndex = 19;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button2.ForeColor = System.Drawing.SystemColors.Window;
+            this.button2.Location = new System.Drawing.Point(628, 200);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 45);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "Xóa";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button3.ForeColor = System.Drawing.SystemColors.Window;
+            this.button3.Location = new System.Drawing.Point(440, 200);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 45);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Sửa";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.button4.ForeColor = System.Drawing.SystemColors.Window;
+            this.button4.Location = new System.Drawing.Point(234, 200);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 45);
+            this.button4.TabIndex = 27;
+            this.button4.Text = "Thêm";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // fSachR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1128, 653);
+            this.ClientSize = new System.Drawing.Size(972, 653);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.txtNxb);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.Xóa);
-            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.DataGridSach);
             this.Controls.Add(this.datetimeNgayNhap);
             this.Controls.Add(this.cbTinhTrang);
@@ -336,9 +342,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ComboBox cbTinhTrang;
         private System.Windows.Forms.DateTimePicker datetimeNgayNhap;
         private System.Windows.Forms.DataGridView DataGridSach;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button Xóa;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.TextBox txtNxb;
         private System.Windows.Forms.DataGridViewTextBoxColumn masach;
         private System.Windows.Forms.DataGridViewTextBoxColumn maloaisach;
@@ -347,5 +350,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataGridViewTextBoxColumn tensach;
         private System.Windows.Forms.DataGridViewTextBoxColumn tinhtrang;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaynhap;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

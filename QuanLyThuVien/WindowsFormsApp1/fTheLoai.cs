@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
 
         DataTable ExecuteQuery(string query, object[] parameter = null)
         {
-            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+            string connectionSTR = SQLConStr.conStr;
 
             DataTable data = new DataTable();
 
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
         // trả về 1 data table  gọi trong phương thức xem, lấy dữ liệu qua câu truy vấn
         int ExecuteNonQuery(string query, object[] parameter = null)
         {
-            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+            string connectionSTR = SQLConStr.conStr;
 
             int acceptedRows = 0;
 
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
 
         private void LoadInformation()
         {
-            string connectionSTR = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLTV;Integrated Security=True";
+            string connectionSTR = SQLConStr.conStr;
             SqlConnection connection = new SqlConnection(connectionSTR);
             string query = "select * from LoaiSach";
             connection.Open();

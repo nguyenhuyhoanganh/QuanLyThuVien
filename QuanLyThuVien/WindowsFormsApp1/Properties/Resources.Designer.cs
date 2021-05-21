@@ -333,6 +333,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap phan_mem_quan_ly_thu_vien {
+            get {
+                object obj = ResourceManager.GetObject("phan-mem-quan-ly-thu-vien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sql_open_file_format {
             get {
                 object obj = ResourceManager.GetObject("sql-open-file-format", resourceCulture);
