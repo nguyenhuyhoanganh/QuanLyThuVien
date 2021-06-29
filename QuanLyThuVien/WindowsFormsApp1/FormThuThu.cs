@@ -234,8 +234,9 @@ values('" + textBoxMaDG.Text + "', '" + textBoxTenDG.Text + "', '" + textBoxNgay
         {
             string que = "delete from thuthu where mathuthu = '" + textBoxMaDG.Text + "'";
             string que2 = "delete from muon where mathuthu ='" + textBoxMaDG.Text + "' ";
+            string que3 = "delete from account where mathuthu = '" + textBoxMaDG.Text + "'";
             int rez = 0;
-            int rez2 = 0;
+            int rez2 = 0, rez3 = 0;
             if (textBoxMaDG.Text == "" || textBoxTenDG.Text == "" || textBoxNgaySinh.Text == "" || comboBox2.Text == "" || textBoxDiaChi.Text == "" || textBoxSDT.Text == "")
             {
                 MessageBox.Show("Chọn thủ thư rồi nhấn xóa");
@@ -246,6 +247,7 @@ values('" + textBoxMaDG.Text + "', '" + textBoxTenDG.Text + "', '" + textBoxNgay
                 {
                     if (MessageBox.Show("Thủ thư có thể liên quan đến danh sách mượn sách!! ", "Cảnh báo mất dữ liệu !!", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
                     {
+                        rez3 = installNonQuery(que3);
                         rez2 = installNonQuery(que2);
                         rez = installNonQuery(que);
                         //xóa luôn du lieu muon

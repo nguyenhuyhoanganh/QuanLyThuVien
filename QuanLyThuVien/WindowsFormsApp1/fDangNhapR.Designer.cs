@@ -30,17 +30,18 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnChangePasswordChar = new Guna.UI2.WinForms.Guna2Button();
-            this.iconPassword = new Guna.UI2.WinForms.Guna2Button();
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.iconUsername = new Guna.UI2.WinForms.Guna2Button();
             this.txbUsername = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnChangePasswordChar = new Guna.UI2.WinForms.Guna2Button();
+            this.iconPassword = new Guna.UI2.WinForms.Guna2Button();
+            this.iconUsername = new Guna.UI2.WinForms.Guna2Button();
             this.panelTitleBar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -55,33 +56,6 @@ namespace WindowsFormsApp1
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
-            // btnExit
-            // 
-            this.btnExit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.CheckedState.Parent = this.btnExit;
-            this.btnExit.CustomImages.Parent = this.btnExit;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.HoverState.Parent = this.btnExit;
-            this.btnExit.Image = global::WindowsFormsApp1.Properties.Resources.icons8_close_window_96;
-            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(349, -3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(37, 31);
-            this.btnExit.TabIndex = 5;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnChangePasswordChar);
@@ -95,6 +69,88 @@ namespace WindowsFormsApp1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(358, 107);
             this.panel2.TabIndex = 2;
+            // 
+            // txbPassword
+            // 
+            this.txbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.txbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbPassword.ForeColor = System.Drawing.SystemColors.Window;
+            this.txbPassword.Location = new System.Drawing.Point(95, 60);
+            this.txbPassword.Name = "txbPassword";
+            this.txbPassword.Size = new System.Drawing.Size(168, 15);
+            this.txbPassword.TabIndex = 6;
+            this.txbPassword.Text = "PassWord";
+            this.txbPassword.Click += new System.EventHandler(this.txbPassword_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.Window;
+            this.panel4.Location = new System.Drawing.Point(64, 88);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(230, 1);
+            this.panel4.TabIndex = 5;
+            // 
+            // txbUsername
+            // 
+            this.txbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.txbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbUsername.ForeColor = System.Drawing.SystemColors.Window;
+            this.txbUsername.Location = new System.Drawing.Point(95, 19);
+            this.txbUsername.Name = "txbUsername";
+            this.txbUsername.Size = new System.Drawing.Size(197, 15);
+            this.txbUsername.TabIndex = 3;
+            this.txbUsername.Text = "UserName";
+            this.txbUsername.Click += new System.EventHandler(this.txbUsername_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.Window;
+            this.panel3.Location = new System.Drawing.Point(64, 47);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(230, 1);
+            this.panel3.TabIndex = 0;
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.BorderRadius = 10;
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.White;
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Image = global::WindowsFormsApp1.Properties.Resources.icons8_sign_up_96;
+            this.guna2Button6.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button6.Location = new System.Drawing.Point(76, 403);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(228, 46);
+            this.guna2Button6.TabIndex = 11;
+            this.guna2Button6.Text = "Sign up";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
+            // 
+            // btnSignin
+            // 
+            this.btnSignin.BorderRadius = 8;
+            this.btnSignin.CheckedState.Parent = this.btnSignin;
+            this.btnSignin.CustomImages.Parent = this.btnSignin;
+            this.btnSignin.FillColor = System.Drawing.SystemColors.Window;
+            this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSignin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnSignin.HoverState.BorderColor = System.Drawing.SystemColors.Window;
+            this.btnSignin.HoverState.CustomBorderColor = System.Drawing.SystemColors.Window;
+            this.btnSignin.HoverState.FillColor = System.Drawing.SystemColors.Window;
+            this.btnSignin.HoverState.Parent = this.btnSignin;
+            this.btnSignin.Image = global::WindowsFormsApp1.Properties.Resources.icons8_login_96B;
+            this.btnSignin.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnSignin.Location = new System.Drawing.Point(76, 344);
+            this.btnSignin.Name = "btnSignin";
+            this.btnSignin.ShadowDecoration.Parent = this.btnSignin;
+            this.btnSignin.Size = new System.Drawing.Size(228, 47);
+            this.btnSignin.TabIndex = 5;
+            this.btnSignin.Text = "Sign In";
+            this.btnSignin.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnChangePasswordChar
             // 
@@ -139,26 +195,6 @@ namespace WindowsFormsApp1
             this.iconPassword.Size = new System.Drawing.Size(37, 31);
             this.iconPassword.TabIndex = 7;
             // 
-            // txbPassword
-            // 
-            this.txbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.txbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbPassword.ForeColor = System.Drawing.SystemColors.Window;
-            this.txbPassword.Location = new System.Drawing.Point(95, 60);
-            this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(168, 15);
-            this.txbPassword.TabIndex = 6;
-            this.txbPassword.Text = "PassWord";
-            this.txbPassword.Click += new System.EventHandler(this.txbPassword_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.Window;
-            this.panel4.Location = new System.Drawing.Point(64, 88);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(230, 1);
-            this.panel4.TabIndex = 5;
-            // 
             // iconUsername
             // 
             this.iconUsername.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
@@ -183,48 +219,6 @@ namespace WindowsFormsApp1
             this.iconUsername.ShadowDecoration.Parent = this.iconUsername;
             this.iconUsername.Size = new System.Drawing.Size(37, 31);
             this.iconUsername.TabIndex = 4;
-            // 
-            // txbUsername
-            // 
-            this.txbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.txbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbUsername.ForeColor = System.Drawing.SystemColors.Window;
-            this.txbUsername.Location = new System.Drawing.Point(95, 19);
-            this.txbUsername.Name = "txbUsername";
-            this.txbUsername.Size = new System.Drawing.Size(197, 15);
-            this.txbUsername.TabIndex = 3;
-            this.txbUsername.Text = "UserName";
-            this.txbUsername.Click += new System.EventHandler(this.txbUsername_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Window;
-            this.panel3.Location = new System.Drawing.Point(64, 47);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(230, 1);
-            this.panel3.TabIndex = 0;
-            // 
-            // btnSignin
-            // 
-            this.btnSignin.BorderRadius = 8;
-            this.btnSignin.CheckedState.Parent = this.btnSignin;
-            this.btnSignin.CustomImages.Parent = this.btnSignin;
-            this.btnSignin.FillColor = System.Drawing.SystemColors.Window;
-            this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSignin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnSignin.HoverState.BorderColor = System.Drawing.SystemColors.Window;
-            this.btnSignin.HoverState.CustomBorderColor = System.Drawing.SystemColors.Window;
-            this.btnSignin.HoverState.FillColor = System.Drawing.SystemColors.Window;
-            this.btnSignin.HoverState.Parent = this.btnSignin;
-            this.btnSignin.Image = global::WindowsFormsApp1.Properties.Resources.icons8_login_96B;
-            this.btnSignin.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnSignin.Location = new System.Drawing.Point(76, 380);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.ShadowDecoration.Parent = this.btnSignin;
-            this.btnSignin.Size = new System.Drawing.Size(228, 47);
-            this.btnSignin.TabIndex = 5;
-            this.btnSignin.Text = "Sign In";
-            this.btnSignin.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // panelTitleBar
             // 
@@ -253,12 +247,40 @@ namespace WindowsFormsApp1
             this.panelTitleBar.Size = new System.Drawing.Size(150, 110);
             this.panelTitleBar.TabIndex = 1;
             // 
+            // btnExit
+            // 
+            this.btnExit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.CheckedState.Parent = this.btnExit;
+            this.btnExit.CustomImages.Parent = this.btnExit;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.HoverState.Parent = this.btnExit;
+            this.btnExit.Image = global::WindowsFormsApp1.Properties.Resources.icons8_close_window_96;
+            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExit.Location = new System.Drawing.Point(349, -3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnExit.ShadowDecoration.Parent = this.btnExit;
+            this.btnExit.Size = new System.Drawing.Size(37, 31);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // fDangNhapR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(382, 553);
+            this.Controls.Add(this.guna2Button6);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTitleBar);
@@ -288,5 +310,6 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2Button btnChangePasswordChar;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2Button btnSignin;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
     }
 }

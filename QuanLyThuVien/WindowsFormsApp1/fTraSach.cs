@@ -59,11 +59,13 @@ namespace WindowsFormsApp1
             if (DataProvider.Instance.ExecuteNonQuery(query) > 0)
             {
                 MessageBox.Show("Gia hạn thành công!");
+                btnLamMoi_Tra_Click(sender, e);
             }
             else
             {
                 MessageBox.Show("Có lỗi khi gia hạn phiếu mượn");
             }
+           
         }
 
         private void btnLamMoi_Tra_Click(object sender, EventArgs e)
@@ -85,10 +87,10 @@ namespace WindowsFormsApp1
                 string query = string.Format("Update dbo.Muon set tinhtrangmuon = 'False' where mamuon ='{0}' and madocgia = '{1}' and masach = '{2}' and ngaymuon = '{3}' and ngaytra='{4}' and tinhtrangmuon='True'", mamuon, madocgia, masach, ngaymuon, ngaytra);
                 if (DataProvider.Instance.ExecuteNonQuery(query) > 0)
                 {
-                    string query1 = string.Format("Update dbo.Sach set tinhtrang = 'False' where (masach in (select Muon.masach from Muon where tinhtrangmuon = 'False') and masach ='{0}' )", masach);
+                    string query1 = string.Format("Update dbo.Sach set tinhtrang = 'False' where (masach in (select Muon.masach from Muon where tinhtrangmuon = 'False') and masach =N'{0}' )", masach);
                     DataProvider.Instance.ExecuteNonQuery(query1);
                     MessageBox.Show("Trả sách thành công !");
-
+                    btnLamMoi_Tra_Click(sender, e);
                 }
                 else
                 {

@@ -78,8 +78,9 @@ namespace WindowsFormsApp1.DTO
                         }
                     }
                 }
-
-                data = command.ExecuteNonQuery();
+                try { data = command.ExecuteNonQuery(); }
+                catch { data = 0; }
+                
 
                 connection.Close();
             }

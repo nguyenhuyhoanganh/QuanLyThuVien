@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
                 using (SqlConnection connec = new SqlConnection(SQLConStr.conStr))
                 {
                     connec.Open();
-                    string query = "select tt.hoten,tt.ngaysinh, tt.gioitinh, tt.diachi,tt.sdt,tt.mathuthu  from Account, ThuThu as tt where username = '" + txbUsername.Text + "' and pass = '" + txbPassword.Text + "'";
+                    string query = "select tt.hoten,tt.ngaysinh, tt.gioitinh, tt.diachi,tt.sdt,tt.mathuthu  from Account, ThuThu as tt where username = '" + txbUsername.Text + "' and pass = '" + txbPassword.Text + "' and tt.mathuthu = Account.mathuthu";
                     SqlCommand com = new SqlCommand(query, connec);
                     SqlDataAdapter adapter = new SqlDataAdapter(com);
                     connec.Close();
@@ -96,6 +96,12 @@ namespace WindowsFormsApp1
             if (txbPassword.Text == "PassWord")
                 txbPassword.Clear();
             txbPassword.UseSystemPasswordChar = true;
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            DangKi f = new DangKi();
+            f.Show();
         }
     }
 }

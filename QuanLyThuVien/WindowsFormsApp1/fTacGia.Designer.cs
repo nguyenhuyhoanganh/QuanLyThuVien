@@ -152,6 +152,7 @@
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.AutoSizeChanged += new System.EventHandler(this.btnXoa_Click);
+            this.button2.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // button3
             // 
@@ -164,6 +165,7 @@
             this.button3.Text = "Sửa";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.AutoSizeChanged += new System.EventHandler(this.btnSua_Click);
+            this.button3.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // button4
             // 
@@ -176,6 +178,7 @@
             this.button4.Text = "Thêm";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.AutoSizeChanged += new System.EventHandler(this.btnThem_Click);
+            this.button4.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // fTacGia
             // 

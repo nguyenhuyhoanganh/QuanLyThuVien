@@ -24,9 +24,7 @@ namespace WindowsFormsApp1
             txtMaSach.Text = "";
             txtMls.Text = "";
             txtTacGia.Text = "";
-            txtNxb.Text = "";
             txtTenSach.Text = "";
-            cbTinhTrang.Text = "";
             datetimeNgayNhap.Text = "";
         }
 
@@ -127,7 +125,7 @@ namespace WindowsFormsApp1
             connection.Close();
             DataGridSach.DataSource = data;
         }
-       
+
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -137,75 +135,49 @@ namespace WindowsFormsApp1
                 {
                     if (txtTacGia.Text != "")
                     {
-                        if(txtNxb.Text!="")
+
+
+                        if (txtTenSach.Text != "")
                         {
-                            
-                            if(txtTenSach.Text!="")
-                            {
 
-                                if(cbTinhTrang.Text!="")
+                                if (datetimeNgayNhap.Text != "")
                                 {
-                                    if(datetimeNgayNhap.Text!="")
+                                    string masach = txtMaSach.Text;
+                                    string mls = txtMls.Text;
+                                    string matg = txtTacGia.Text;
+                                    string tensach = txtTenSach.Text;
+
+
+                                    DateTime ngaynhap = (DateTime)datetimeNgayNhap.Value;
+
+
+
+                                    string query = "Insert into Sach values(  N'" + masach.ToString() + "',N'" + mls.ToString() + "',N'" + matg.ToString() + "' ,N'" + tensach.ToString() + "','False','" + ngaynhap.ToString() + "')";
+                                    int i = -1;
+                                    i = ExecuteNonQuery(query);
+                                    if (i != -1)
                                     {
-                                        string masach = txtMaSach.Text;
-                                        string mls = txtMls.Text;
-                                        string matg = txtTacGia.Text;
-                                        string manxb = txtNxb.Text;
-                                        string tensach = txtTenSach.Text;
-
-                                        bool tinhtrang;
-                                        if (cbTinhTrang.Text == "True")
-                                        {
-                                            tinhtrang = true;
-                                        }
-                                        else
-                                        {
-                                            tinhtrang = false;
-                                        }
-                                        DateTime ngaynhap = (DateTime)datetimeNgayNhap.Value;
+                                        MessageBox.Show("Đã Thêm Thành Công!");
 
 
-
-                                        string query = "Insert into Sach values(  N'" + masach.ToString() + "',N'" + mls.ToString() + "',N'" + matg.ToString() + "' ,N'" + manxb.ToString() + "',N'" + tensach.ToString() + "','" + tinhtrang.ToString() + "','" + ngaynhap.ToString() + "')";
-                                        int i = -1;
-                                        i = ExecuteNonQuery(query);
-                                        if (i != -1)
-                                        {
-                                            MessageBox.Show("Đã Thêm Thành Công!");
-
-
-                                            LoadInformation();
-                                            ClearDL();
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("Thêm Không Thành Công!");
-                                        }
-                                    }   
+                                        LoadInformation();
+                                        ClearDL();
+                                    }
                                     else
                                     {
-                                        MessageBox.Show("Bạn chưa nhập ngày nhập");
-                                    }    
-
-                                }    
+                                        MessageBox.Show("Thêm Không Thành Công!");
+                                    }
+                                }
                                 else
                                 {
-                                    MessageBox.Show("Bạn chưa nhập tình trạng");
-                                }    
-                            }
-                            else
-                            {
-                                MessageBox.Show("Bạn chưa nhập tên sách");
-                            }    
+                                    MessageBox.Show("Bạn chưa nhập ngày nhập");
+                                }
+
                         }
                         else
                         {
-                            MessageBox.Show("Bạn chưa nhập mã nxb");
-                        }    
-
-
-                        
-
+                            MessageBox.Show("Bạn chưa nhập tên sách");
+                        }
 
 
                     }
@@ -236,75 +208,45 @@ namespace WindowsFormsApp1
                 {
                     if (txtTacGia.Text != "")
                     {
-                        if (txtNxb.Text != "")
+
+                        if (txtTenSach.Text != "")
                         {
-
-                            if (txtTenSach.Text != "")
-                            {
-
-                                if (cbTinhTrang.Text != "")
+                                if (datetimeNgayNhap.Text != "")
                                 {
-                                    if (datetimeNgayNhap.Text != "")
+                                    string masach = txtMaSach.Text;
+                                    string mls = txtMls.Text;
+                                    string matg = txtTacGia.Text;
+                                    string tensach = txtTenSach.Text;
+
+                                    DateTime ngaynhap = datetimeNgayNhap.Value;
+
+
+
+                                    string query = "Update Sach set masach=  N'" + masach.ToString() + "',maloaisach=N'" + mls.ToString() + "',matg=N'" + matg.ToString() + "' ,tensach=N'" + tensach.ToString() + "',ngaynhap='" + ngaynhap.ToString() + "' where masach=  N'" + masach.ToString() + "'";
+                                    int i = -1;
+                                    i = ExecuteNonQuery(query);
+                                    if (i != -1)
                                     {
-                                        string masach = txtMaSach.Text;
-                                        string mls = txtMls.Text;
-                                        string matg = txtTacGia.Text;
-                                        string manxb = txtNxb.Text;
-                                        string tensach = txtTenSach.Text;
-                                        bool tinhtrang;
-                                        if (cbTinhTrang.Text == "True")
-                                        {
-                                            tinhtrang = true;
-                                        }
-                                        else
-                                        {
-                                            tinhtrang = false;
-                                        }
-                                        DateTime ngaynhap = datetimeNgayNhap.Value;
+                                        MessageBox.Show("Đã Sửa Thành Công!");
 
 
-
-                                        string query = "Update Sach set masach=  N'" + masach.ToString() + "',maloaisach=N'" + mls.ToString() + "',matg=N'" + matg.ToString() + "' ,manxb = N'" + manxb.ToString() + "',tensach=N'" + tensach.ToString() + "',tinhtrang = '" + tinhtrang.ToString() + "',ngaynhap='" + ngaynhap.ToString() + "' where masach=  N'" + masach.ToString() + "'";
-                                        int i = -1;
-                                        i = ExecuteNonQuery(query);
-                                        if (i != -1)
-                                        {
-                                            MessageBox.Show("Đã Sửa Thành Công!");
-
-
-                                            LoadInformation();
-                                            ClearDL();
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("Sửa Không Thành Công!");
-                                        }
+                                        LoadInformation();
+                                        ClearDL();
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Bạn chưa nhập ngày nhập");
+                                        MessageBox.Show("Sửa Không Thành Công!");
                                     }
-
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Bạn chưa nhập tình trạng");
+                                    MessageBox.Show("Bạn chưa nhập ngày nhập");
                                 }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Bạn chưa nhập tên sách");
-                            }
                         }
                         else
                         {
-                            MessageBox.Show("Bạn chưa nhập mã nxb");
+                            MessageBox.Show("Bạn chưa nhập tên sách");
                         }
-
-
-
-
-
 
                     }
                     else
@@ -334,13 +276,6 @@ namespace WindowsFormsApp1
                 if (txtMaSach.Text != "")
                 {
                     string masach = txtMaSach.Text;
-                    string mls = txtMls.Text;
-                    string matg = txtTacGia.Text;
-                    string manxb = txtNxb.Text;
-                    string tensach = txtTenSach.Text;
-                    
-
-                    DateTime ngaynhap = datetimeNgayNhap.Value;
 
 
                     string query = @"delete Sach where masach =  N'" + masach.ToString() + "'";
@@ -364,16 +299,15 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void Sach_CellClick(object sender, DataGridViewCellEventArgs e)
+
+        private void DataGridSach_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int i = DataGridSach.CurrentRow.Index;
             txtMaSach.Text = DataGridSach.Rows[i].Cells[0].Value.ToString();
             txtMls.Text = DataGridSach.Rows[i].Cells[1].Value.ToString();
             txtTacGia.Text = DataGridSach.Rows[i].Cells[2].Value.ToString();
-            txtNxb.Text = DataGridSach.Rows[i].Cells[3].Value.ToString();
-            txtTenSach.Text = DataGridSach.Rows[i].Cells[4].Value.ToString();
-            cbTinhTrang.Text = DataGridSach.Rows[i].Cells[5].Value.ToString();
-            datetimeNgayNhap.Text = DataGridSach.Rows[i].Cells[6].Value.ToString();
+            txtTenSach.Text = DataGridSach.Rows[i].Cells[3].Value.ToString();
+            datetimeNgayNhap.Text = DataGridSach.Rows[i].Cells[5].Value.ToString();
 
         }
     }

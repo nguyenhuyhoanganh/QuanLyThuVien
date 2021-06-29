@@ -330,3 +330,4 @@ C:\Users\User\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\
 C:\Users\User\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\QuanLyThuVien.csproj.CopyComplete
 C:\Users\User\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\User\OneDrive\Desktop\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\huyho\OneDrive\Desktop\TT Nhóm\QuanLyThuVien\QuanLyThuVien\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DangKi.resources

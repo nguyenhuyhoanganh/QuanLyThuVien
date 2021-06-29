@@ -59,9 +59,10 @@ namespace WindowsFormsApp1
             if (MuonDAO.Instance.InsertPM(mamuon, mathuthu, madocgia, masach, ngaymuon, ngaytra, tinhtrangmuon))
             {
 
-                string query = string.Format("update Sach set Sach.tinhtrang = 'True' Where (Sach.masach in (select muon.masach from dbo.Muon) and Sach.masach={0})", masach);
+                string query = string.Format("update Sach set Sach.tinhtrang = 'True' Where (Sach.masach in (select muon.masach from dbo.Muon) and Sach.masach=N'{0}')", masach);
                 DataProvider.Instance.ExecuteNonQuery(query);
                 MessageBox.Show("Tạo Phiếu mượn thành công!");
+                LoadListBook();
             }
             else
             {
